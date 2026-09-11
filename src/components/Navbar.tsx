@@ -255,7 +255,7 @@ export function Navbar() {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[65px] bg-white border-b border-slate-200 p-5 shadow-2xl space-y-4 max-h-[85vh] overflow-y-auto">
+        <div className="lg:hidden fixed inset-x-0 top-[65px] bg-white border-b border-slate-200 p-5 shadow-2xl space-y-4 max-h-[85vh] overflow-y-auto z-50">
           <div className="space-y-1">
             <div className="text-xs font-mono text-sky-600 uppercase tracking-wider px-3 py-1 font-semibold">
               Proprietary Platforms
@@ -264,16 +264,22 @@ export function Navbar() {
               href="https://www.neojan.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="block px-3 py-2 rounded-lg text-sm text-slate-800 hover:bg-slate-100 font-medium text-sky-600 flex items-center gap-1.5"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2.5 rounded-lg text-sm font-semibold text-sky-600 hover:bg-sky-50 flex items-center justify-between"
             >
-              Neojan — <span className="text-xs text-slate-500">Enterprise Operations Platform (www.neojan.com)</span>
-              <ExternalLink className="h-3 w-3" />
+              <div className="flex items-center gap-1.5">
+                <span>Neojan</span>
+                <span className="text-xs font-normal text-slate-500">— Enterprise Operations</span>
+              </div>
+              <ExternalLink className="h-3.5 w-3.5" />
             </a>
             <Link
               href="/products/talentgate"
-              className="block px-3 py-2 rounded-lg text-sm text-slate-800 hover:bg-slate-100"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2.5 rounded-lg text-sm text-slate-800 hover:bg-slate-100 flex items-center justify-between font-medium"
             >
-              Talentgate — <span className="text-xs text-amber-700 font-semibold">Launching Soon</span>
+              <span>Talentgate</span>
+              <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-50 text-amber-800 font-mono border border-amber-200 font-semibold">Launching Soon</span>
             </Link>
           </div>
 
@@ -281,34 +287,70 @@ export function Navbar() {
             <div className="text-xs font-mono text-sky-600 uppercase tracking-wider px-3 py-1 font-semibold">
               Core Engineering Services
             </div>
-            <Link href="/services/custom-software-development" className="block px-3 py-1.5 text-sm text-slate-700">
+            <Link
+              href="/services/custom-software-development"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded-md"
+            >
               Custom Software Development
             </Link>
-            <Link href="/services/saas-development" className="block px-3 py-1.5 text-sm text-slate-700">
+            <Link
+              href="/services/saas-development"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded-md"
+            >
               SaaS Development
             </Link>
-            <Link href="/services/web-application-development" className="block px-3 py-1.5 text-sm text-slate-700">
+            <Link
+              href="/services/web-application-development"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded-md"
+            >
               Web Application Development
             </Link>
-            <Link href="/services/mobile-app-development" className="block px-3 py-1.5 text-sm text-slate-700">
+            <Link
+              href="/services/mobile-app-development"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2 text-sm text-slate-700 hover:bg-slate-50 rounded-md"
+            >
               Mobile App Development
             </Link>
-            <Link href="/services" className="block px-3 py-2 text-xs font-semibold text-sky-600">
+            <Link
+              href="/services"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2 text-xs font-semibold text-sky-600 hover:underline"
+            >
               View All 12 Services →
             </Link>
           </div>
 
-          <div className="border-t border-slate-100 pt-3 space-y-2">
-            <Link href="/about" className="block px-3 py-2 text-sm text-slate-800">
+          <div className="border-t border-slate-100 pt-3 space-y-1.5">
+            <Link
+              href="/about"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2 text-sm text-slate-800 hover:bg-slate-50 rounded-md font-medium"
+            >
               About Us
             </Link>
-            <Link href="/work" className="block px-3 py-2 text-sm text-slate-800">
+            <Link
+              href="/work"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2 text-sm text-slate-800 hover:bg-slate-50 rounded-md font-medium"
+            >
               Case Studies
             </Link>
-            <Link href="/insights" className="block px-3 py-2 text-sm text-slate-800">
+            <Link
+              href="/insights"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2 text-sm text-slate-800 hover:bg-slate-50 rounded-md font-medium"
+            >
               Insights & Blog
             </Link>
-            <Link href="/contact" className="block px-3 py-2 text-sm font-semibold text-sky-600">
+            <Link
+              href="/contact"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block px-3 py-2.5 text-sm font-bold text-center text-white bg-sky-600 hover:bg-sky-700 rounded-lg shadow-sm mt-2"
+            >
               Start a Project
             </Link>
           </div>

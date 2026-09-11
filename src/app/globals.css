@@ -6,11 +6,23 @@
     --foreground: #0f172a;
   }
 
+  html,
   body {
+    max-width: 100vw;
+    overflow-x: hidden;
     background-color: var(--background);
     color: var(--foreground);
     font-family: var(--font-sans, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif);
-    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  img,
+  svg,
+  video,
+  canvas {
+    max-width: 100%;
+    height: auto;
   }
 
   /* Clean Light Mode Background & Glow Utilities */

@@ -44,7 +44,7 @@ export function NeojanDashboardMockup() {
       </div>
 
       {/* Internal Navigation Bar */}
-      <div className="flex border-b border-slate-200 bg-slate-50/50 px-4">
+      <div className="flex border-b border-slate-200 bg-slate-50/50 px-2 sm:px-4 overflow-x-auto whitespace-nowrap text-xs">
         <button
           onClick={() => setActiveTab("overview")}
           className={`flex items-center space-x-2 px-4 py-2.5 font-medium border-b-2 transition-all ${
