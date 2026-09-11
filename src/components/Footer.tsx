@@ -12,14 +12,19 @@ export function Footer() {
           {/* Brand Pillar */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="flex items-center space-x-3 group">
-              <div className="h-9 w-9 rounded-xl bg-gradient-to-tr from-sky-500 via-indigo-500 to-blue-600 p-[1px]">
-                <div className="h-full w-full rounded-[11px] bg-slate-900 flex items-center justify-center">
-                  <Cpu className="h-5 w-5 text-sky-400" />
-                </div>
+              <img
+                src="/brand-symbol.png"
+                alt="Dhruvi Software Solutions"
+                className="h-10 w-auto object-contain brightness-110"
+              />
+              <div className="flex flex-col">
+                <span className="font-extrabold text-lg tracking-tight text-white leading-none">
+                  Dhruvi <span className="text-sky-400 font-black">SOFTWARE</span>
+                </span>
+                <span className="text-[9px] font-mono text-slate-400 tracking-wider uppercase mt-1">
+                  IDEAS. SOLUTIONS. A BRIGHTER TOMORROW.
+                </span>
               </div>
-              <span className="font-extrabold text-lg tracking-tight text-white">
-                Dhruvi <span className="text-sky-400">Software</span>
-              </span>
             </Link>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-md">
               We build software products that solve real business problems — including our platforms (Neojan & Talentgate) and custom software engineered for ambitious businesses worldwide.

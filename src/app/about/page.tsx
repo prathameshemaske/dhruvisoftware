@@ -26,6 +26,32 @@ export default function AboutPage() {
           </p>
         </div>
 
+        {/* Official Brand Identity Showcase */}
+        <div className="rounded-2xl bg-white border border-slate-200 p-8 shadow-sm space-y-6">
+          <div className="text-center max-w-xl mx-auto space-y-2">
+            <div className="text-xs font-mono text-sky-600 uppercase tracking-wider font-semibold">
+              Official Brand Identity
+            </div>
+            <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900">
+              Ideas. Solutions. A Brighter Tomorrow.
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600">
+              Our brand mark signifies forward motion, engineering precision, and software excellence.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+            <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 flex flex-col items-center justify-center space-y-3">
+              <span className="text-xs font-mono text-slate-500 uppercase">Primary Light Brand Logo</span>
+              <img src="/logo-primary-clean.png" alt="Dhruvi Software Primary Logo" className="h-16 w-auto object-contain" />
+            </div>
+            <div className="p-6 rounded-xl bg-slate-900 border border-slate-800 flex flex-col items-center justify-center space-y-3">
+              <span className="text-xs font-mono text-slate-400 uppercase">Primary Dark Brand Logo</span>
+              <img src="/logo-dark-clean.png" alt="Dhruvi Software Dark Logo" className="h-16 w-auto object-contain" />
+            </div>
+          </div>
+        </div>
+
         {/* Dual Pillar Story */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-slate-200 pt-12">
           <div className="p-8 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4">

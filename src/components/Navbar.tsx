@@ -47,19 +47,19 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Brand Logo */}
+          {/* Official Brand Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-tr from-sky-500 via-indigo-500 to-blue-600 p-[1px] shadow-sm group-hover:shadow-md transition-all">
-              <div className="h-full w-full rounded-[11px] bg-white flex items-center justify-center">
-                <Cpu className="h-5 w-5 text-sky-600 group-hover:scale-110 transition-transform" />
-              </div>
-            </div>
+            <img
+              src="/brand-symbol.png"
+              alt="Dhruvi Software Solutions"
+              className="h-10 w-auto object-contain group-hover:scale-105 transition-transform"
+            />
             <div className="flex flex-col">
-              <span className="font-extrabold text-base sm:text-lg tracking-tight text-slate-900 group-hover:text-sky-600 transition-colors">
-                Dhruvi <span className="text-sky-600">Software</span>
+              <span className="font-extrabold text-base sm:text-lg tracking-tight text-slate-900 leading-none group-hover:text-sky-600 transition-colors">
+                Dhruvi <span className="text-sky-600 font-black">SOFTWARE</span>
               </span>
-              <span className="text-[10px] font-mono text-slate-500 tracking-wider uppercase">
-                Product Engineering
+              <span className="text-[9px] font-mono text-slate-500 tracking-wider uppercase mt-1">
+                IDEAS. SOLUTIONS. A BRIGHTER TOMORROW.
               </span>
             </div>
           </Link>
