@@ -98,11 +98,11 @@ export function ProjectPlannerForm() {
                     <Sparkles className="h-8 w-8" />
                   </div>
                   <div className="inline-flex items-center px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-mono font-bold">
-                    Coming Soon — We Will Serve You ASAP!
+                    We Will Serve You ASAP — Currently in Development Phase
                   </div>
                   <h3 className="text-2xl font-bold text-slate-900">Project Inquiry Received!</h3>
                   <p className="text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
-                    Thank you, <strong className="text-sky-700">{formData.name}</strong>. Our full client onboarding platform is launching coming soon, and our senior engineering team will serve you ASAP!
+                    Thank you, <strong className="text-sky-700">{formData.name}</strong>. We will serve you ASAP! Currently, we are in the Development phase, and our team will review your inquiry promptly.
                   </p>
                   <button
                     onClick={() => setFormSubmitted(false)}
