@@ -35,7 +35,6 @@ export const organizationJsonLd = {
   sameAs: [
     "https://linkedin.com/company/dhruvi-software-solutions",
     "https://twitter.com/dhruvisoftware",
-    "https://github.com/prathameshemaske/dhruvisoftware",
   ],
 };
 

@@ -11,7 +11,6 @@ export interface CompanyInfo {
   socialLinks: {
     linkedin: string;
     twitter: string;
-    github: string;
   };
   metrics: Array<{ value: string; label: string; subtext: string }>;
   philosophy: Array<{ title: string; description: string; icon: string }>;
@@ -33,7 +32,6 @@ export const companyData: CompanyInfo = {
   socialLinks: {
     linkedin: "https://linkedin.com/company/dhruvi-software-solutions",
     twitter: "https://twitter.com/dhruvisoftware",
-    github: "https://github.com/prathameshemaske/dhruvisoftware",
   },
   metrics: [
     { value: "2+", label: "Proprietary Software Platforms", subtext: "Neojan & Talentgate" },
