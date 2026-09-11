@@ -16,7 +16,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dhruvsoftwaresolutions.com"),
+  metadataBase: new URL("https://dhruvisoftwaresolutions.com"),
   title: {
     default: "Dhruvi Software Solutions | Software Products & Custom Engineering",
     template: "%s | Dhruvi Software Solutions",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://dhruvsoftwaresolutions.com",
+    url: "https://dhruvisoftwaresolutions.com",
     title: "Dhruvi Software Solutions | Software Products & Custom Engineering",
     description:
       "We build our own software platforms and engineer custom software applications for ambitious businesses looking to launch, scale, and automate.",
