@@ -8,7 +8,7 @@ export function ProjectPlannerForm() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const [formData, setFormData] = useState({
+  const initialFormState = {
     name: "",
     company: "",
     email: "",
@@ -17,7 +17,14 @@ export function ProjectPlannerForm() {
     budget: "$10,000 - $25,000",
     timeline: "1 - 2 Months",
     description: "",
-  });
+  };
+
+  const [formData, setFormData] = useState(initialFormState);
+
+  const handleResetForm = () => {
+    setFormData(initialFormState);
+    setFormSubmitted(false);
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -115,7 +122,7 @@ export function ProjectPlannerForm() {
                     Thank you, <strong className="text-sky-700">{formData.name}</strong>. We will serve you ASAP! Currently, we are in the Development phase, and our team will review your inquiry promptly.
                   </p>
                   <button
-                    onClick={() => setFormSubmitted(false)}
+                    onClick={handleResetForm}
                     className="mt-4 px-6 py-2.5 rounded-lg text-xs font-semibold bg-slate-100 text-slate-800 hover:bg-slate-200 transition-colors"
                   >
                     Submit Another Inquiry
