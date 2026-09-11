@@ -27,13 +27,13 @@ export const companyData: CompanyInfo = {
     "Dhruvi Software Solutions is a modern product engineering and software development firm. Unlike traditional IT outsourcing agencies, we build and operate our own proprietary software products — including Neojan and Talentgate — while delivering end-to-end custom software development, SaaS platforms, enterprise systems, and application modernization for startups, SMEs, and enterprises globally.",
   foundingYear: 2021,
   location: "Mumbai, India",
-  email: "contact@dhruvisoftware.com",
+  email: "contact@dhruvsoftwaresolutions.com",
   phone: "+91 98765 43210",
   address: "Innovation Tech Park, BKC, Mumbai, Maharashtra 400051, India",
   socialLinks: {
     linkedin: "https://linkedin.com/company/dhruvi-software-solutions",
     twitter: "https://twitter.com/dhruvisoftware",
-    github: "https://github.com/dhruvisoftware",
+    github: "https://github.com/prathameshemaske/dhruvisoftware",
   },
   metrics: [
     { value: "2+", label: "Proprietary SaaS Platforms", subtext: "Active in production" },

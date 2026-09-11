@@ -3,7 +3,7 @@ import { productsData } from "@/data/productsData";
 import { servicesData } from "@/data/servicesData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://dhruvisoftware.com";
+  const baseUrl = "https://dhruvsoftwaresolutions.com";
 
   const staticPages = [
     "",

@@ -17,8 +17,8 @@ export const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Dhruvi Software Solutions",
-  url: "https://dhruvisoftware.com",
-  logo: "https://dhruvisoftware.com/logo.png",
+  url: "https://dhruvsoftwaresolutions.com",
+  logo: "https://dhruvsoftwaresolutions.com/logo.png",
   description:
     "Software product engineering and custom software development company. Builders of Neojan and Talentgate platforms.",
   address: {
@@ -29,13 +29,13 @@ export const organizationJsonLd = {
   },
   contactPoint: {
     "@type": "ContactPoint",
-    email: "contact@dhruvisoftware.com",
+    email: "contact@dhruvsoftwaresolutions.com",
     contactType: "customer service",
   },
   sameAs: [
     "https://linkedin.com/company/dhruvi-software-solutions",
     "https://twitter.com/dhruvisoftware",
-    "https://github.com/dhruvisoftware",
+    "https://github.com/prathameshemaske/dhruvisoftware",
   ],
 };
 
@@ -43,10 +43,10 @@ export const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Dhruvi Software Solutions",
-  url: "https://dhruvisoftware.com",
+  url: "https://dhruvsoftwaresolutions.com",
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://dhruvisoftware.com/insights?q={search_term_string}",
+    target: "https://dhruvsoftwaresolutions.com/insights?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/_next/"],
     },
-    sitemap: "https://dhruvisoftware.com/sitemap.xml",
+    sitemap: "https://dhruvsoftwaresolutions.com/sitemap.xml",
   };
 }
