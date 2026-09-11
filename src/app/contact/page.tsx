@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="py-12 sm:py-20 bg-slate-950 min-h-screen">
+    <div className="py-12 sm:py-20 bg-slate-50 min-h-screen">
       <ProjectPlannerForm />
     </div>
   );

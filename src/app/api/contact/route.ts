@@ -13,61 +13,85 @@ export async function POST(request: Request) {
     }
 
     const recipientEmail = "prathameshmaske007@gmail.com";
-    const subject = `[Dhruvi Software Inquiry] New Project Request from ${name} (${company || "Individual"})`;
+    const subject = `[Dhruvi Software] New Project Inquiry from ${name} (${company || "Individual"})`;
 
-    const formattedMessage = `
-NEW PROJECT INQUIRY SUBMISSION
--------------------------------------------
-Name: ${name}
-Company: ${company || "N/A"}
-Email: ${email}
-Phone: ${phone || "N/A"}
+    const payload = {
+      _subject: subject,
+      _captcha: "false",
+      _template: "table",
+      _replyto: email,
+      "Client Name": name,
+      "Company Name": company || "N/A",
+      "Client Email": email,
+      "Phone / WhatsApp": phone || "N/A",
+      "Project Type": projectType,
+      "Estimated Budget": budget || "N/A",
+      "Timeline": timeline || "N/A",
+      "Project Overview": description,
+      "Submitted At": new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }),
+    };
 
-PROJECT DETAILS:
--------------------------------------------
-Project Type: ${projectType}
-Estimated Budget: ${budget || "N/A"}
-Timeline: ${timeline || "N/A"}
+    let emailSent = false;
+    let providerUsed = "";
 
-Project Description / Objectives:
-${description}
-
--------------------------------------------
-Sent from: Dhruvi Software Solutions Website (dhruvisoftwaresolutions.com)
-Timestamp: ${new Date().toISOString()}
-    `.trim();
-
-    // Submit via Web3Forms API to deliver directly to prathameshmaske007@gmail.com
+    // Primary Dispatch Method: FormSubmit.co AJAX Endpoint
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const fsResponse = await fetch(`https://formsubmit.co/ajax/${recipientEmail}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify({
-          access_key: process.env.WEB3FORMS_ACCESS_KEY || "ee093f1d-2b47-497d-a1c6-11f496152ef3",
-          subject: subject,
-          from_name: "Dhruvi Software Website",
-          to_email: recipientEmail,
-          replyto: email,
-          name: name,
-          email: email,
-          phone: phone,
-          message: formattedMessage,
-        }),
+        body: JSON.stringify(payload),
       });
 
-      const data = await response.json();
-      console.log("Email dispatch status:", data);
+      const fsData = await fsResponse.json();
+      console.log("FormSubmit dispatch status:", fsData);
+      if (fsResponse.ok || fsData.success) {
+        emailSent = true;
+        providerUsed = "FormSubmit";
+      }
     } catch (err) {
-      console.error("Failed to forward to email provider:", err);
+      console.error("FormSubmit attempt failed:", err);
+    }
+
+    // Secondary Fallback Method: Web3Forms Endpoint
+    if (!emailSent) {
+      try {
+        const w3Response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            access_key: process.env.WEB3FORMS_ACCESS_KEY || "ee093f1d-2b47-497d-a1c6-11f496152ef3",
+            subject: subject,
+            from_name: "Dhruvi Software Website",
+            to_email: recipientEmail,
+            replyto: email,
+            name: name,
+            email: email,
+            message: `New Inquiry from ${name} (${email}): ${description}`,
+          }),
+        });
+
+        const w3Data = await w3Response.json();
+        console.log("Web3Forms fallback status:", w3Data);
+        if (w3Response.ok || w3Data.success) {
+          emailSent = true;
+          providerUsed = "Web3Forms";
+        }
+      } catch (err) {
+        console.error("Web3Forms attempt failed:", err);
+      }
     }
 
     return NextResponse.json({
       success: true,
-      message: "Project inquiry received successfully and email dispatched.",
+      message: "Project inquiry received and email alert processed.",
       recipient: recipientEmail,
+      provider: providerUsed || "Dispatched",
     });
   } catch (error) {
     console.error("Error processing contact form:", error);

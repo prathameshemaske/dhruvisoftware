@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Cpu, Target } from "lucide-react";
 import { companyData } from "@/data/companyData";
 
@@ -43,11 +44,25 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
             <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 flex flex-col items-center justify-center space-y-3">
               <span className="text-xs font-mono text-slate-500 uppercase">Primary Light Brand Logo</span>
-              <img src="/logo-primary-clean.png" alt="Dhruvi Software Primary Logo" className="h-16 w-auto object-contain" />
+              <Image
+                src="/logo-primary-clean.png"
+                alt="Dhruvi Software Primary Logo"
+                width={400}
+                height={160}
+                loading="lazy"
+                className="h-16 w-auto object-contain"
+              />
             </div>
             <div className="p-6 rounded-xl bg-slate-900 border border-slate-800 flex flex-col items-center justify-center space-y-3">
               <span className="text-xs font-mono text-slate-400 uppercase">Primary Dark Brand Logo</span>
-              <img src="/logo-dark-clean.png" alt="Dhruvi Software Dark Logo" className="h-16 w-auto object-contain" />
+              <Image
+                src="/logo-dark-clean.png"
+                alt="Dhruvi Software Dark Logo"
+                width={400}
+                height={160}
+                loading="lazy"
+                className="h-16 w-auto object-contain"
+              />
             </div>
           </div>
         </div>
