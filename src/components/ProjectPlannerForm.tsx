@@ -19,13 +19,23 @@ export function ProjectPlannerForm() {
     description: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
+    try {
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+    } catch (err) {
+      console.error("Failed to post inquiry:", err);
+    } finally {
       setLoading(false);
       setFormSubmitted(true);
-    }, 1000);
+    }
   };
 
   return (
