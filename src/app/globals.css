@@ -13,14 +13,9 @@
     overflow-x: hidden;
   }
 
-  /* Clean Light Mode Grid Pattern */
-  .bg-tech-grid {
-    background-image: radial-gradient(rgba(2, 132, 199, 0.12) 1px, transparent 1px);
-    background-size: 28px 28px;
-  }
-
-  .bg-radial-gradient {
-    background: radial-gradient(circle at 50% 20%, rgba(2, 132, 199, 0.08) 0%, rgba(99, 102, 241, 0.05) 35%, transparent 70%);
+  /* Clean Light Mode Background & Glow Utilities */
+  .bg-radial-glow {
+    background: radial-gradient(circle at 50% 30%, rgba(2, 132, 199, 0.08) 0%, rgba(99, 102, 241, 0.04) 45%, transparent 70%);
   }
 
   /* Soft Light Shadows & Glows */

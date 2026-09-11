@@ -7,9 +7,10 @@ import { NeojanDashboardMockup } from "@/components/UiMockups";
 
 export function HeroSection() {
   return (
-    <section className="relative pt-12 sm:pt-20 pb-16 sm:pb-24 overflow-hidden bg-gradient-to-b from-sky-50/60 via-white to-slate-50 bg-tech-grid">
-      {/* Background Accent Halo */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-sky-400/10 blur-[120px] rounded-full pointer-events-none"></div>
+    <section className="relative pt-12 sm:pt-20 pb-16 sm:pb-24 overflow-hidden bg-gradient-to-b from-sky-50/70 via-white to-slate-50">
+      {/* Background Soft Accent Light Halos */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-sky-300/20 blur-[130px] rounded-full pointer-events-none -z-10"></div>
+      <div className="absolute top-1/3 right-10 w-[400px] h-[400px] bg-indigo-200/20 blur-[110px] rounded-full pointer-events-none -z-10"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
