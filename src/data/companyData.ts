@@ -26,18 +26,18 @@ export const companyData: CompanyInfo = {
   longDescription:
     "Dhruvi Software Solutions is a modern product engineering and software development firm. Unlike traditional IT outsourcing agencies, we build and operate our own proprietary software products — including Neojan and Talentgate — while delivering end-to-end custom software development, SaaS platforms, enterprise systems, and application modernization for startups, SMEs, and enterprises globally.",
   foundingYear: 2021,
-  location: "Mumbai, India",
+  location: "Coming Soon",
   email: "contact@dhruvisoftwaresolutions.com",
-  phone: "+91 98765 43210",
-  address: "Innovation Tech Park, BKC, Mumbai, Maharashtra 400051, India",
+  phone: "Coming Soon",
+  address: "Coming Soon",
   socialLinks: {
     linkedin: "https://linkedin.com/company/dhruvi-software-solutions",
     twitter: "https://twitter.com/dhruvisoftware",
     github: "https://github.com/prathameshemaske/dhruvisoftware",
   },
   metrics: [
-    { value: "2+", label: "Proprietary SaaS Platforms", subtext: "Active in production" },
-    { value: "99.9%", label: "System Uptime SLA", subtext: "Cloud infrastructure" },
+    { value: "2+", label: "Proprietary Software Platforms", subtext: "Neojan & Talentgate" },
+    { value: "99.9%", label: "System Uptime Architecture", subtext: "Cloud infrastructure" },
     { value: "100%", label: "Code & Data Ownership", subtext: "Guaranteed to clients" },
     { value: "7-Step", label: "Product Lifecycle", subtext: "Engineering discipline" },
   ],
@@ -45,7 +45,7 @@ export const companyData: CompanyInfo = {
     {
       title: "We Build Products, Not Just Projects",
       description:
-        "Because we engineer, launch, and operate our own platforms (Neojan and Talentgate), we understand real user friction, system architecture, technical debt, and continuous delivery.",
+        "Because we engineer and build our own software platforms (Neojan and Talentgate), we understand real user friction, system architecture, technical debt, and continuous delivery.",
       icon: "Cpu",
     },
     {
@@ -57,7 +57,7 @@ export const companyData: CompanyInfo = {
     {
       title: "Product-Quality Standards",
       description:
-        "We apply the exact same product-grade quality control, security standards, and CI/CD pipelines to client projects as we do to our own SaaS platforms.",
+        "We apply the exact same product-grade quality control, security standards, and CI/CD pipelines to client projects as we do to our own platforms.",
       icon: "ShieldCheck",
     },
     {
@@ -71,17 +71,17 @@ export const companyData: CompanyInfo = {
     {
       question: "What differentiates Dhruvi Software Solutions from typical IT agencies?",
       answer:
-        "Most software vendors are pure coding houses that sell billable hours. Dhruvi Software Solutions is a product engineering company that builds and operates its own software platforms (Neojan & Talentgate). This gives us deep, hands-on mastery over the full product lifecycle — from UX architecture to cloud scaling and long-term maintenance.",
+        "Most software vendors are pure coding houses that sell billable hours. Dhruvi Software Solutions is a product engineering company that builds its own software platforms (Neojan & Talentgate). This gives us deep, hands-on mastery over the full product lifecycle — from UX architecture to cloud scaling and long-term maintenance.",
     },
     {
       question: "What engagement models do you offer for custom software development?",
       answer:
-        "We offer dedicated product engineering teams, fixed-scope MVP milestone delivery, and long-term modernization/maintenance partnerships. Every project comes with a dedicated tech lead, transparent sprint updates, and clear repository access.",
+        "We offer dedicated product engineering teams, fixed-scope MVP milestone delivery, and long-term modernization/maintenance partnerships. Every project comes with transparent sprint updates and clear repository access.",
     },
     {
       question: "Can you help modernize legacy business systems?",
       answer:
-        "Yes. We specialize in refactoring monoliths, migrating legacy databases to scalable cloud infrastructures, integrating APIs with modern web/mobile frontends, and automating spreadsheet-heavy business workflows.",
+        "Yes. We specialize in refactoring monoliths, migrating legacy databases to scalable cloud infrastructures, integrating APIs with modern web/mobile frontends, and automating manual business workflows.",
     },
     {
       question: "Who owns the code and intellectual property of custom projects?",

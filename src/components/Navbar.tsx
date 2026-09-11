@@ -7,14 +7,13 @@ import {
   ChevronDown,
   Code2,
   Cpu,
-  Layers,
   Menu,
   Sparkles,
   Workflow,
   X,
   ArrowRight,
+  ExternalLink,
 } from "lucide-react";
-import { productsData } from "@/data/productsData";
 import { servicesData } from "@/data/servicesData";
 
 export function Navbar() {
@@ -87,33 +86,52 @@ export function Navbar() {
               {productsOpen && (
                 <div className="absolute top-full left-0 w-80 pt-2 z-50">
                   <div className="rounded-xl border border-slate-200 bg-white p-3 shadow-xl backdrop-blur-xl space-y-2">
-                    <div className="px-3 py-1.5 text-[10px] font-mono text-sky-600 uppercase tracking-wider">
-                      Built & Owned Platforms
+                    <div className="px-3 py-1.5 text-[10px] font-mono text-sky-600 uppercase tracking-wider font-semibold">
+                      Our Software Platforms
                     </div>
-                    {productsData.map((prod) => (
-                      <Link
-                        key={prod.id}
-                        href={`/products/${prod.slug}`}
-                        className="flex items-start space-x-3 p-2.5 rounded-lg hover:bg-slate-50 transition-colors group"
-                      >
-                        <div className="p-2 rounded-lg bg-sky-50 text-sky-600 border border-sky-100 group-hover:border-sky-300">
-                          {prod.id === "neojan" ? <Workflow className="h-4 w-4" /> : <Sparkles className="h-4 w-4" />}
+                    
+                    {/* Neojan External Redirect Link */}
+                    <a
+                      href="https://www.neojan.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-start space-x-3 p-2.5 rounded-lg hover:bg-slate-50 transition-colors group"
+                    >
+                      <div className="p-2 rounded-lg bg-sky-50 text-sky-600 border border-sky-100 group-hover:border-sky-300">
+                        <Workflow className="h-4 w-4" />
+                      </div>
+                      <div>
+                        <div className="font-semibold text-sm text-slate-900 group-hover:text-sky-600 flex items-center gap-1.5">
+                          Neojan
+                          <ExternalLink className="h-3 w-3 text-sky-600" />
                         </div>
-                        <div>
-                          <div className="font-semibold text-sm text-slate-900 group-hover:text-sky-600 flex items-center gap-1.5">
-                            {prod.name}
-                            <span className="text-[10px] px-1.5 py-0.2 rounded bg-indigo-50 text-indigo-700 font-mono border border-indigo-100">Owned</span>
-                          </div>
-                          <p className="text-xs text-slate-500 line-clamp-1">{prod.tagline}</p>
+                        <p className="text-xs text-slate-500 line-clamp-1">Enterprise Operations Platform</p>
+                      </div>
+                    </a>
+
+                    {/* Talentgate Launching Soon Link */}
+                    <Link
+                      href="/products/talentgate"
+                      className="flex items-start space-x-3 p-2.5 rounded-lg hover:bg-slate-50 transition-colors group"
+                    >
+                      <div className="p-2 rounded-lg bg-amber-50 text-amber-700 border border-amber-200 group-hover:border-amber-400">
+                        <Sparkles className="h-4 w-4" />
+                      </div>
+                      <div>
+                        <div className="font-semibold text-sm text-slate-900 group-hover:text-amber-700 flex items-center gap-1.5">
+                          Talentgate
+                          <span className="text-[10px] px-1.5 py-0.2 rounded bg-amber-50 text-amber-800 font-mono border border-amber-200">Launching Soon</span>
                         </div>
-                      </Link>
-                    ))}
+                        <p className="text-xs text-slate-500 line-clamp-1">AI Recruitment & HR Suite</p>
+                      </div>
+                    </Link>
+
                     <div className="border-t border-slate-100 pt-2 px-3">
                       <Link
                         href="/products"
                         className="flex items-center justify-between text-xs font-semibold text-sky-600 hover:text-sky-700 py-1"
                       >
-                        <span>View All Platforms</span>
+                        <span>View Products Overview</span>
                         <ArrowRight className="h-3.5 w-3.5" />
                       </Link>
                     </div>
@@ -142,7 +160,7 @@ export function Navbar() {
               {servicesOpen && (
                 <div className="absolute top-full -left-20 w-[540px] pt-2 z-50">
                   <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-xl backdrop-blur-xl">
-                    <div className="px-2 pb-2 text-[10px] font-mono text-sky-600 uppercase tracking-wider border-b border-slate-100 mb-3">
+                    <div className="px-2 pb-2 text-[10px] font-mono text-sky-600 uppercase tracking-wider border-b border-slate-100 mb-3 font-semibold">
                       Custom Software & Engineering Solutions
                     </div>
                     <div className="grid grid-cols-2 gap-2">
@@ -239,22 +257,28 @@ export function Navbar() {
       {mobileMenuOpen && (
         <div className="lg:hidden fixed inset-x-0 top-[65px] bg-white border-b border-slate-200 p-5 shadow-2xl space-y-4 max-h-[85vh] overflow-y-auto">
           <div className="space-y-1">
-            <div className="text-xs font-mono text-sky-600 uppercase tracking-wider px-3 py-1">
+            <div className="text-xs font-mono text-sky-600 uppercase tracking-wider px-3 py-1 font-semibold">
               Proprietary Platforms
             </div>
-            {productsData.map((prod) => (
-              <Link
-                key={prod.id}
-                href={`/products/${prod.slug}`}
-                className="block px-3 py-2 rounded-lg text-sm text-slate-800 hover:bg-slate-100"
-              >
-                {prod.name} — <span className="text-xs text-slate-500">{prod.category}</span>
-              </Link>
-            ))}
+            <a
+              href="https://www.neojan.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block px-3 py-2 rounded-lg text-sm text-slate-800 hover:bg-slate-100 font-medium text-sky-600 flex items-center gap-1.5"
+            >
+              Neojan — <span className="text-xs text-slate-500">Enterprise Operations Platform (www.neojan.com)</span>
+              <ExternalLink className="h-3 w-3" />
+            </a>
+            <Link
+              href="/products/talentgate"
+              className="block px-3 py-2 rounded-lg text-sm text-slate-800 hover:bg-slate-100"
+            >
+              Talentgate — <span className="text-xs text-amber-700 font-semibold">Launching Soon</span>
+            </Link>
           </div>
 
           <div className="border-t border-slate-100 pt-3 space-y-1">
-            <div className="text-xs font-mono text-sky-600 uppercase tracking-wider px-3 py-1">
+            <div className="text-xs font-mono text-sky-600 uppercase tracking-wider px-3 py-1 font-semibold">
               Core Engineering Services
             </div>
             <Link href="/services/custom-software-development" className="block px-3 py-1.5 text-sm text-slate-700">

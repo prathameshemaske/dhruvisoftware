@@ -14,6 +14,7 @@ export interface ProductItem {
   techStack: string[];
   status: string;
   highlights: string[];
+  externalUrl?: string;
   schemaType: "SoftwareApplication";
   applicationCategory: string;
   operatingSystem: string;
@@ -24,13 +25,13 @@ export const productsData: ProductItem[] = [
     id: "neojan",
     slug: "neojan",
     name: "Neojan",
-    badge: "Built & Owned by Dhruvi Software Solutions",
+    badge: "Built & Owned Platform",
     tagline: "Enterprise Operations & Business Workflow Intelligence Platform",
     description:
       "A high-performance business operating platform engineered to unify fragmented operational workflows, internal data pipelines, inventory tracking, and enterprise analytics into a real-time command center.",
     fullDescription:
       "Neojan was designed and built in-house by Dhruvi Software Solutions to eliminate manual process friction, spreadsheet dependency, and disconnected business tools. Built on a modular microservices architecture, Neojan empowers mid-market companies and growing enterprises to automate routine administrative tasks, monitor key operational KPIs in real time, and scale multi-departmental operations with multi-tenant security.",
-    category: "Enterprise Operations SaaS",
+    category: "Enterprise Operations Platform",
     architectureType: "Cloud-Native Multi-Tenant Architecture",
     targetAudience: [
       "Mid-market & Enterprise Operations Teams",
@@ -71,13 +72,14 @@ export const productsData: ProductItem[] = [
       { name: "Integration Gateway", detail: "RESTful & GraphQL API management with webhook listeners." },
     ],
     techStack: ["React / Next.js", "Node.js", "TypeScript", "PostgreSQL", "Redis", "Docker", "AWS"],
-    status: "Active Production SaaS",
+    status: "Live Platform",
     highlights: [
       "Built entirely in-house using modern product engineering practices",
       "Reduces manual administrative effort by up to 65%",
       "Sub-second query response times for enterprise datasets",
-      "Continuous weekly deployment cycle",
+      "Continuous deployment cycle",
     ],
+    externalUrl: "https://www.neojan.com",
     schemaType: "SoftwareApplication",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web-based / Cross-Platform",
@@ -86,13 +88,13 @@ export const productsData: ProductItem[] = [
     id: "talentgate",
     slug: "talentgate",
     name: "Talentgate",
-    badge: "Built & Owned by Dhruvi Software Solutions",
-    tagline: "Next-Generation AI Recruitment & Talent Acquisition Management Suite",
+    badge: "Launching Soon",
+    tagline: "Next-Generation AI Recruitment & Talent Acquisition Suite — Launching Soon",
     description:
-      "An end-to-end recruitment platform that streamlines candidate sourcing, automated resume parsing, collaborative interview evaluation, and hiring pipeline analytics.",
+      "An end-to-end recruitment platform currently in development, designed to streamline candidate sourcing, automated resume parsing, collaborative interview evaluation, and hiring pipeline analytics.",
     fullDescription:
-      "Talentgate is our proprietary HR tech platform engineered specifically to solve hiring bottlenecks for growing technology teams and modern HR departments. By replacing slow, fragmented hiring tools with an intuitive Kanban pipeline, automated interview scheduling, AI-assisted resume skill matching, and candidate communication hub, Talentgate enables organizations to hire top-tier talent faster and with greater precision.",
-    category: "HR & Recruitment SaaS",
+      "Talentgate is our upcoming HR tech platform engineered specifically to solve hiring bottlenecks for growing technology teams and modern HR departments. By replacing slow, fragmented hiring tools with an intuitive Kanban pipeline, automated interview scheduling, AI-assisted resume skill matching, and candidate communication hub, Talentgate will enable organizations to hire top-tier talent faster.",
+    category: "HR & Recruitment Suite",
     architectureType: "High-Concurrency SaaS Platform",
     targetAudience: [
       "HR & Talent Acquisition Teams",
@@ -132,11 +134,11 @@ export const productsData: ProductItem[] = [
       { name: "Interview & Assessment Suite", detail: "Calendar scheduling integration, scorecards, and evaluation matrices." },
       { name: "Recruitment Analytics", detail: "Time-to-hire, source effectiveness, and bottleneck identification charts." },
     ],
-    techStack: ["Next.js", "TypeScript", "Python / AI Engine", "PostgreSQL", "Tailwind CSS", "Vercel / AWS"],
-    status: "Active Production SaaS",
+    techStack: ["Next.js", "TypeScript", "Python / AI Engine", "PostgreSQL", "Tailwind CSS", "AWS"],
+    status: "Launching Soon",
     highlights: [
       "Engineered from the ground up by Dhruvi Software Solutions",
-      "Accelerates time-to-hire by 45%",
+      "Launching soon for technology & HR teams",
       "Structured evaluation rubrics eliminate hiring bias",
       "Seamless calendar and video platform integrations",
     ],

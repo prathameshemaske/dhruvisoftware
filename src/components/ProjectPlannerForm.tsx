@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { CheckCircle2, Clock, Mail, Phone, Send } from "lucide-react";
+import { CheckCircle2, Clock, Mail, Send, Sparkles } from "lucide-react";
 import { companyData } from "@/data/companyData";
 
 export function ProjectPlannerForm() {
@@ -25,7 +25,7 @@ export function ProjectPlannerForm() {
     setTimeout(() => {
       setLoading(false);
       setFormSubmitted(true);
-    }, 1200);
+    }, 1000);
   };
 
   return (
@@ -40,7 +40,7 @@ export function ProjectPlannerForm() {
             Have a Software Idea or Business Problem?
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-            Tell us what you're trying to build, improve, automate, or solve. Our senior technical architects will review your requirements and provide a clear technical roadmap within 24 hours.
+            Tell us what you're trying to build, improve, automate, or solve. Our senior technical architects will review your requirements and provide a clear technical roadmap.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export function ProjectPlannerForm() {
                 <div className="flex items-start space-x-3">
                   <CheckCircle2 className="h-5 w-5 text-sky-600 shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-slate-900 block font-semibold">24-Hour SLA Technical Response</strong>
+                    <strong className="text-slate-900 block font-semibold">Rapid SLA Technical Response</strong>
                     <span>We evaluate project feasibility, tech stack recommendations, and scope frameworks promptly.</span>
                   </div>
                 </div>
@@ -81,13 +81,9 @@ export function ProjectPlannerForm() {
                   <Mail className="h-4 w-4 text-sky-600" />
                   <span>{companyData.email}</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Phone className="h-4 w-4 text-sky-600" />
-                  <span>{companyData.phone}</span>
-                </div>
-                <div className="flex items-center space-x-3">
+                <div className="flex items-center space-x-3 text-slate-500">
                   <Clock className="h-4 w-4 text-sky-600" />
-                  <span>Mon - Fri: 9:00 AM - 7:00 PM IST</span>
+                  <span>Mon - Fri: Technical Team Online</span>
                 </div>
               </div>
             </div>
@@ -98,12 +94,15 @@ export function ProjectPlannerForm() {
             <div className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8 shadow-xl">
               {formSubmitted ? (
                 <div className="text-center py-12 space-y-4">
-                  <div className="h-16 w-16 rounded-full bg-emerald-50 text-emerald-600 border border-emerald-200 mx-auto flex items-center justify-center">
-                    <CheckCircle2 className="h-8 w-8" />
+                  <div className="h-16 w-16 rounded-full bg-sky-50 text-sky-600 border border-sky-200 mx-auto flex items-center justify-center">
+                    <Sparkles className="h-8 w-8" />
+                  </div>
+                  <div className="inline-flex items-center px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-mono font-bold">
+                    Coming Soon — We Will Serve You ASAP!
                   </div>
                   <h3 className="text-2xl font-bold text-slate-900">Project Inquiry Received!</h3>
-                  <p className="text-sm text-slate-600 max-w-md mx-auto">
-                    Thank you, <strong className="text-sky-700">{formData.name}</strong>. Our senior software engineering team will review your project requirements and get in touch via email within 24 hours.
+                  <p className="text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
+                    Thank you, <strong className="text-sky-700">{formData.name}</strong>. Our full client onboarding platform is launching coming soon, and our senior engineering team will serve you ASAP!
                   </p>
                   <button
                     onClick={() => setFormSubmitted(false)}

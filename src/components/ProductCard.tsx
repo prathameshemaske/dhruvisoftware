@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Sparkles, Workflow } from "lucide-react";
+import { ArrowRight, CheckCircle2, ExternalLink, Sparkles, Workflow } from "lucide-react";
 import { ProductItem } from "@/data/productsData";
 import { NeojanDashboardMockup, TalentgateDashboardMockup } from "@/components/UiMockups";
 
@@ -20,13 +20,13 @@ export function OwnedProductsSection({ products }: ProductSectionProps) {
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-mono">
             <Sparkles className="h-3.5 w-3.5 text-indigo-600" />
-            <span>Our Primary Business Pillar</span>
+            <span>Our Proprietary Software Platforms</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Products We Build and Own
+            Software Platforms Built & Engineered by Us
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-            We don't only build software for clients. We engineer, launch, operate, and continuously evolve software products of our own. These platforms are live proof of our technical capability and product mindset.
+            We don't only build software for clients. We engineer software platforms of our own. Neojan is live and Talentgate is launching soon.
           </p>
         </div>
 
@@ -45,7 +45,11 @@ export function OwnedProductsSection({ products }: ProductSectionProps) {
               >
                 {prod.id === "neojan" ? <Workflow className="h-4 w-4" /> : <Sparkles className="h-4 w-4" />}
                 <span>{prod.name}</span>
-                <span className="text-[10px] px-1.5 py-0.2 rounded bg-slate-100 font-mono text-slate-700">Owned</span>
+                <span className={`text-[10px] px-1.5 py-0.2 rounded font-mono ${
+                  prod.id === "neojan" ? "bg-emerald-100 text-emerald-800" : "bg-amber-100 text-amber-800 font-bold"
+                }`}>
+                  {prod.id === "neojan" ? "Live" : "Launching Soon"}
+                </span>
               </button>
             ))}
           </div>
@@ -64,7 +68,11 @@ export function OwnedProductsSection({ products }: ProductSectionProps) {
                 {/* Left Product Details */}
                 <div className="lg:col-span-6 space-y-6">
                   <div className="flex items-center space-x-3">
-                    <span className="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-sky-50 text-sky-700 border border-sky-200">
+                    <span className={`px-3 py-1 rounded-full text-xs font-mono font-semibold border ${
+                      prod.id === "neojan"
+                        ? "bg-sky-50 text-sky-700 border-sky-200"
+                        : "bg-amber-50 text-amber-800 border-amber-200 font-bold"
+                    }`}>
                       {prod.badge}
                     </span>
                     <span className="text-xs font-mono text-slate-500">{prod.category}</span>
@@ -103,13 +111,25 @@ export function OwnedProductsSection({ products }: ProductSectionProps) {
 
                   {/* Product CTA */}
                   <div className="pt-4 flex items-center space-x-4">
-                    <Link
-                      href={`/products/${prod.slug}`}
-                      className="inline-flex items-center px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold text-white bg-sky-600 hover:bg-sky-700 transition-colors shadow-md shadow-sky-600/20 group"
-                    >
-                      <span>Explore {prod.name} Platform</span>
-                      <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                    </Link>
+                    {prod.externalUrl ? (
+                      <a
+                        href={prod.externalUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold text-white bg-sky-600 hover:bg-sky-700 transition-colors shadow-md shadow-sky-600/20 group"
+                      >
+                        <span>Visit Neojan Platform (www.neojan.com)</span>
+                        <ExternalLink className="ml-2 h-4 w-4" />
+                      </a>
+                    ) : (
+                      <Link
+                        href={`/products/${prod.slug}`}
+                        className="inline-flex items-center px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold text-slate-800 bg-amber-50 hover:bg-amber-100 border border-amber-200 transition-colors shadow-sm group"
+                      >
+                        <span>Talentgate Launching Soon — Details</span>
+                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                    )}
                   </div>
                 </div>
 

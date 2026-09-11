@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Workflow } from "lucide-react";
+import { ArrowRight, ExternalLink, Workflow } from "lucide-react";
 import { NeojanDashboardMockup } from "@/components/UiMockups";
 import { JsonLd } from "@/components/JsonLd";
 import { productsData } from "@/data/productsData";
@@ -10,7 +10,7 @@ const neojanData = productsData.find((p) => p.id === "neojan")!;
 export const metadata = {
   title: "Neojan | Enterprise Operations & Workflow Intelligence Platform",
   description:
-    "Neojan is a proprietary enterprise operations platform built and operated by Dhruvi Software Solutions. Unify workflows, real-time analytics, and data pipelines.",
+    "Neojan is an enterprise operations platform built and operated by Dhruvi Software Solutions. Unify workflows, real-time analytics, and data pipelines.",
 };
 
 const neojanSchema = {
@@ -19,17 +19,12 @@ const neojanSchema = {
   name: "Neojan",
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web-based",
+  url: "https://www.neojan.com",
   description: neojanData.fullDescription,
   author: {
     "@type": "Organization",
     name: "Dhruvi Software Solutions",
-    url: "https://dhruvisoftware.com",
-  },
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "USD",
-    availability: "https://schema.org/InStock",
+    url: "https://dhruvisoftwaresolutions.com",
   },
 };
 
@@ -52,7 +47,7 @@ export default function NeojanPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-6 space-y-6">
             <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs font-mono">
-              <span>Proprietary SaaS Platform</span>
+              <span>Live Platform · www.neojan.com</span>
             </div>
             <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
               Neojan — Enterprise Operations & Workflow Intelligence
@@ -61,13 +56,15 @@ export default function NeojanPage() {
               {neojanData.description}
             </p>
             <div className="flex items-center space-x-4 pt-2">
-              <Link
-                href="/contact?product=neojan"
-                className="inline-flex items-center px-6 py-3 rounded-xl text-xs sm:text-sm font-bold text-white bg-sky-600 hover:bg-sky-700 transition-colors shadow-md shadow-sky-600/20 group"
+              <a
+                href="https://www.neojan.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3.5 rounded-xl text-xs sm:text-sm font-bold text-white bg-sky-600 hover:bg-sky-700 transition-colors shadow-md shadow-sky-600/20 group"
               >
-                <span>Request Neojan Platform Demo</span>
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
+                <span>Visit Neojan Platform (www.neojan.com)</span>
+                <ExternalLink className="ml-2 h-4 w-4" />
+              </a>
             </div>
           </div>
 
