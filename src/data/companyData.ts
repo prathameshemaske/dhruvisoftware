@@ -30,8 +30,8 @@ export const companyData: CompanyInfo = {
   phone: "Available upon request",
   address: "Maharashtra, India",
   socialLinks: {
-    linkedin: "https://linkedin.com/company/dhruvi-software-solutions",
-    twitter: "https://twitter.com/dhruvisoftware",
+    linkedin: "",
+    twitter: "",
   },
   metrics: [
     { value: "2+", label: "In-House Products", subtext: "Neojan & Talentgate" },

@@ -32,10 +32,6 @@ export const organizationJsonLd = {
     email: "contact@dhruvisoftwaresolutions.com",
     contactType: "customer service",
   },
-  sameAs: [
-    "https://linkedin.com/company/dhruvi-software-solutions",
-    "https://twitter.com/dhruvisoftware",
-  ],
 };
 
 export const websiteJsonLd = {
