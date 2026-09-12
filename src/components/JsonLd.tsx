@@ -18,7 +18,7 @@ export const organizationJsonLd = {
   "@type": "Organization",
   name: "Dhruvi Software Solutions",
   url: "https://dhruvisoftwaresolutions.com",
-  logo: "https://dhruvisoftwaresolutions.com/logo.png",
+  logo: "https://dhruvisoftwaresolutions.com/brand-symbol.png",
   description:
     "Software product engineering and custom software development company. Builders of Neojan and Talentgate platforms.",
   address: {
