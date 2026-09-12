@@ -12,7 +12,7 @@ export function HeroSection() {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-sky-300/20 blur-[130px] rounded-full pointer-events-none -z-10"></div>
       <div className="absolute top-1/3 right-10 w-[400px] h-[400px] bg-indigo-200/20 blur-[110px] rounded-full pointer-events-none -z-10"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-[1536px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           {/* Left Column: Copy & Value Proposition */}
           <div className="lg:col-span-6 space-y-6 text-left">

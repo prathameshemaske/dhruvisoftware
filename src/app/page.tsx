@@ -18,7 +18,7 @@ export default function HomePage() {
 
       {/* 2. Positioning & Capability Strip */}
       <div className="border-y border-slate-200 bg-white py-4 font-mono text-xs text-slate-600 overflow-x-auto shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 flex items-center justify-between whitespace-nowrap gap-6">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-8 lg:px-12 flex items-center justify-between whitespace-nowrap gap-6">
           <span className="text-sky-700 font-semibold flex items-center gap-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-sky-600 animate-ping"></span>
             PROPRIETARY PLATFORMS & CUSTOM ENGINEERING
@@ -44,7 +44,7 @@ export default function HomePage() {
 
       {/* 6. System Architecture Visual Showcase */}
       <section className="py-16 sm:py-20 bg-white border-t border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1536px] mx-auto px-4 sm:px-8 lg:px-12">
           <CustomSoftwareArchitectureDiagram />
         </div>
       </section>

@@ -47,7 +47,7 @@ export function ProjectPlannerForm() {
 
   return (
     <section id="project-planner" className="py-16 sm:py-24 bg-slate-50 border-t border-slate-200 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div className="max-w-[1536px] mx-auto px-4 sm:px-8 lg:px-12 space-y-12">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs font-mono">
