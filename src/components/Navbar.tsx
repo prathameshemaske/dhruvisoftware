@@ -37,26 +37,37 @@ export function Navbar() {
     setServicesOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [mobileMenuOpen]);
+
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs ${
-        scrolled ? "py-2.5" : "py-3.5"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white border-b border-slate-200 shadow-xs ${
+        scrolled ? "py-2" : "py-2.5 sm:py-3"
       }`}
     >
       <div className="max-w-[1536px] mx-auto px-4 sm:px-8 lg:px-12">
         <div className="flex items-center justify-between">
           {/* Official Brand Logo */}
-          <Link href="/" className="flex items-center space-x-3 group">
+          <Link href="/" className="flex items-center space-x-2.5 sm:space-x-3 group">
             <img
               src="/brand-symbol.png"
               alt="Dhruvi Software Solutions"
-              className="h-10 w-auto object-contain group-hover:scale-105 transition-transform"
+              className="h-8 sm:h-9 w-auto object-contain group-hover:scale-105 transition-transform"
             />
             <div className="flex flex-col">
-              <span className="font-extrabold text-base sm:text-lg tracking-tight text-slate-900 leading-none group-hover:text-sky-600 transition-colors">
+              <span className="font-extrabold text-sm sm:text-base tracking-tight text-slate-900 leading-none group-hover:text-sky-600 transition-colors">
                 Dhruvi <span className="text-sky-600 font-black">SOFTWARE</span>
               </span>
-              <span className="text-[9px] font-mono text-slate-500 tracking-wider uppercase mt-1">
+              <span className="text-[9px] font-mono text-slate-500 tracking-wider uppercase mt-0.5 hidden sm:block">
                 IDEAS. SOLUTIONS. A BRIGHTER TOMORROW.
               </span>
             </div>
@@ -257,10 +268,10 @@ export function Navbar() {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[60px] sm:top-[64px] bottom-0 bg-white z-50 p-5 shadow-2xl space-y-4 overflow-y-auto">
+        <div className="lg:hidden fixed inset-x-0 top-[55px] sm:top-[61px] bottom-0 bg-white z-50 p-5 shadow-2xl space-y-4 overflow-y-auto">
           <div className="space-y-1">
             <div className="text-xs font-mono text-sky-600 uppercase tracking-wider px-3 py-1 font-semibold">
-              Proprietary Platforms
+              Our Software Products
             </div>
             <a
               href="https://www.neojan.com"

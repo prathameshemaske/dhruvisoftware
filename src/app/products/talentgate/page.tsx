@@ -29,7 +29,7 @@ const talentgateSchema = {
 
 export default function TalentgatePage() {
   return (
-    <div className="py-12 sm:py-20 bg-slate-50 min-h-screen space-y-16">
+    <div className="py-6 sm:py-12 bg-slate-50 min-h-screen space-y-12 sm:space-y-16">
       <JsonLd data={talentgateSchema} />
 
       <div className="max-w-[1536px] mx-auto px-4 sm:px-8 lg:px-12 space-y-12">
