@@ -95,15 +95,17 @@ export function Navbar() {
                       rel="noopener noreferrer"
                       className="flex items-start space-x-3 p-2.5 rounded-lg hover:bg-slate-50 transition-colors group"
                     >
-                      <div className="p-2 rounded-lg bg-sky-50 text-sky-600 border border-sky-100 group-hover:border-sky-300">
-                        <Workflow className="h-4 w-4" />
-                      </div>
+                      <img
+                        src="/neojan-icon.png"
+                        alt="Neojan Icon"
+                        className="h-8 w-8 rounded-lg object-contain border border-slate-200 shrink-0"
+                      />
                       <div>
                         <div className="font-semibold text-sm text-slate-900 group-hover:text-sky-600 flex items-center gap-1.5">
                           Neojan
                           <ExternalLink className="h-3 w-3 text-sky-600" />
                         </div>
-                        <p className="text-xs text-slate-500 line-clamp-1">Enterprise Operations Platform</p>
+                        <p className="text-xs text-slate-500 line-clamp-1">Work Smarter. Grow Faster.</p>
                       </div>
                     </a>
 
@@ -112,15 +114,17 @@ export function Navbar() {
                       href="/products/talentgate"
                       className="flex items-start space-x-3 p-2.5 rounded-lg hover:bg-slate-50 transition-colors group"
                     >
-                      <div className="p-2 rounded-lg bg-amber-50 text-amber-700 border border-amber-200 group-hover:border-amber-400">
-                        <Sparkles className="h-4 w-4" />
-                      </div>
+                      <img
+                        src="/talentgate-icon.png"
+                        alt="Talentgate Icon"
+                        className="h-8 w-8 rounded-lg object-contain border border-slate-200 shrink-0"
+                      />
                       <div>
                         <div className="font-semibold text-sm text-slate-900 group-hover:text-amber-700 flex items-center gap-1.5">
                           Talentgate
                           <span className="text-[10px] px-1.5 py-0.2 rounded bg-amber-50 text-amber-800 font-mono border border-amber-200">Launching Soon</span>
                         </div>
-                        <p className="text-xs text-slate-500 line-clamp-1">AI Recruitment & HR Suite</p>
+                        <p className="text-xs text-slate-500 line-clamp-1">People · Opportunities · Growth</p>
                       </div>
                     </Link>
 

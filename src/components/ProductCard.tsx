@@ -78,9 +78,18 @@ export function OwnedProductsSection({ products }: ProductSectionProps) {
                     <span className="text-xs font-mono text-slate-500">{prod.category}</span>
                   </div>
 
-                  <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
-                    {prod.name} — <span className="text-slate-600 text-lg sm:text-xl font-medium">{prod.tagline}</span>
-                  </h3>
+                  <div className="flex items-start space-x-3">
+                    <img
+                      src={prod.id === "neojan" ? "/neojan-icon.png" : "/talentgate-icon.png"}
+                      alt={`${prod.name} Logo`}
+                      className="h-12 w-12 rounded-xl object-contain shadow-sm border border-slate-200 shrink-0 mt-1"
+                    />
+                    <div>
+                      <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+                        {prod.name} — <span className="text-slate-600 text-base sm:text-lg font-medium">{prod.tagline}</span>
+                      </h3>
+                    </div>
+                  </div>
 
                   <p className="text-sm text-slate-600 leading-relaxed">{prod.description}</p>
 

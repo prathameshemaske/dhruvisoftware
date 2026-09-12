@@ -26,9 +26,9 @@ export const productsData: ProductItem[] = [
     slug: "neojan",
     name: "Neojan",
     badge: "Built & Owned Platform",
-    tagline: "Enterprise Operations & Business Workflow Intelligence Platform",
+    tagline: "WORK SMARTER. GROW FASTER.",
     description:
-      "A high-performance business operating platform engineered to unify fragmented operational workflows, internal data pipelines, inventory tracking, and enterprise analytics into a real-time command center.",
+      "A modern business platform designed to simplify operations and drive growth. Unifies operational workflows, internal data pipelines, inventory tracking, and enterprise analytics into a real-time command center.",
     fullDescription:
       "Neojan was designed and built in-house by Dhruvi Software Solutions to eliminate manual process friction, spreadsheet dependency, and disconnected business tools. Built on a modular microservices architecture, Neojan empowers mid-market companies and growing enterprises to automate routine administrative tasks, monitor key operational KPIs in real time, and scale multi-departmental operations with multi-tenant security.",
     category: "Enterprise Operations Platform",
@@ -89,9 +89,9 @@ export const productsData: ProductItem[] = [
     slug: "talentgate",
     name: "Talentgate",
     badge: "Launching Soon",
-    tagline: "Next-Generation AI Recruitment & Talent Acquisition Suite — Launching Soon",
+    tagline: "PEOPLE | OPPORTUNITIES | GROWTH",
     description:
-      "An end-to-end recruitment platform currently in development, designed to streamline candidate sourcing, automated resume parsing, collaborative interview evaluation, and hiring pipeline analytics.",
+      "A smart talent platform to connect people, skills and opportunities. Streamlines candidate sourcing, automated resume parsing, collaborative interview evaluation, and hiring pipeline analytics.",
     fullDescription:
       "Talentgate is our upcoming HR tech platform engineered specifically to solve hiring bottlenecks for growing technology teams and modern HR departments. By replacing slow, fragmented hiring tools with an intuitive Kanban pipeline, automated interview scheduling, AI-assisted resume skill matching, and candidate communication hub, Talentgate will enable organizations to hire top-tier talent faster.",
     category: "HR & Recruitment Suite",

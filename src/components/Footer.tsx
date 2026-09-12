@@ -48,14 +48,16 @@ export function Footer() {
                   href="https://www.neojan.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-sky-300 transition-colors flex items-center gap-1.5"
+                  className="hover:text-sky-300 transition-colors flex items-center gap-2"
                 >
+                  <img src="/neojan-icon.png" alt="Neojan" className="h-4 w-4 rounded object-contain shrink-0" />
                   <span>Neojan Platform</span>
                   <ExternalLink className="h-3 w-3 text-sky-400" />
                 </a>
               </li>
               <li>
-                <Link href="/products/talentgate" className="hover:text-sky-300 transition-colors flex items-center gap-1.5">
+                <Link href="/products/talentgate" className="hover:text-sky-300 transition-colors flex items-center gap-2">
+                  <img src="/talentgate-icon.png" alt="Talentgate" className="h-4 w-4 rounded object-contain shrink-0" />
                   <span>Talentgate Suite</span>
                   <span className="text-[10px] px-1.5 py-0.2 rounded bg-amber-500/20 text-amber-300 font-mono">Launching Soon</span>
                 </Link>
