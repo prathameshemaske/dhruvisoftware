@@ -3,9 +3,9 @@ import { caseStudiesData } from "@/data/caseStudiesData";
 import { CheckCircle2 } from "lucide-react";
 
 export const metadata = {
-  title: "Case Studies & Work Portfolio | Dhruvi Software Solutions",
+  title: "Case Studies & Featured Projects | Dhruvi Software Solutions",
   description:
-    "Explore our technical case studies: enterprise workflow automation, SaaS recruitment platform scaling, and financial legacy modernization.",
+    "Explore our case studies: workflow automation, SaaS recruitment platform engineering, and legacy dashboard modernization.",
 };
 
 export default function WorkPage() {
@@ -15,13 +15,13 @@ export default function WorkPage() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs font-mono">
-            <span>Verified Engineering Proof</span>
+            <span>Our Featured Work</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
-            Technical Case Studies & Projects
+            Featured Case Studies & Projects
           </h1>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-            We measure software success through business transformation, system speed, data security, and operational cost reduction. Explore our documented project outcomes.
+            Discover how we design, build, and modernize custom software solutions to solve practical business challenges.
           </p>
         </div>
 

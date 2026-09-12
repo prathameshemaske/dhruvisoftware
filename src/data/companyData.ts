@@ -19,72 +19,72 @@ export interface CompanyInfo {
 
 export const companyData: CompanyInfo = {
   name: "Dhruvi Software Solutions",
-  tagline: "Software Products & Custom Product Engineering",
+  tagline: "Software Development & Product Engineering",
   shortDescription:
-    "We build our own software platforms and engineer custom software applications for ambitious businesses looking to launch, scale, and automate.",
+    "We build custom software applications and SaaS platforms for growing businesses. We also create and run our own software products like Neojan and Talentgate.",
   longDescription:
-    "Dhruvi Software Solutions is a modern product engineering and software development firm. Unlike traditional IT outsourcing agencies, we build and operate our own proprietary software products — including Neojan and Talentgate — while delivering end-to-end custom software development, SaaS platforms, enterprise systems, and application modernization for startups, SMEs, and enterprises globally.",
+    "Dhruvi Software Solutions builds reliable software products and custom applications for businesses. In addition to delivering custom web apps, mobile apps, SaaS platforms, and system modernizations, we also design and operate our own software products (Neojan and Talentgate). This practical experience helps us write clean code, design clear user interfaces, and build scalable systems.",
   foundingYear: 2021,
-  location: "Coming Soon",
+  location: "Maharashtra, India",
   email: "contact@dhruvisoftwaresolutions.com",
-  phone: "Coming Soon",
-  address: "Coming Soon",
+  phone: "Available upon request",
+  address: "Maharashtra, India",
   socialLinks: {
     linkedin: "https://linkedin.com/company/dhruvi-software-solutions",
     twitter: "https://twitter.com/dhruvisoftware",
   },
   metrics: [
-    { value: "2+", label: "Proprietary Software Platforms", subtext: "Neojan & Talentgate" },
-    { value: "99.9%", label: "System Uptime Architecture", subtext: "Cloud infrastructure" },
-    { value: "100%", label: "Code & Data Ownership", subtext: "Guaranteed to clients" },
-    { value: "7-Step", label: "Product Lifecycle", subtext: "Engineering discipline" },
+    { value: "2+", label: "In-House Products", subtext: "Neojan & Talentgate" },
+    { value: "100%", label: "Code & IP Ownership", subtext: "Given directly to clients" },
+    { value: "10+", label: "Software Services", subtext: "Web, Mobile, SaaS & Cloud" },
+    { value: "7-Step", label: "Clear Process", subtext: "From concept to launch" },
   ],
   philosophy: [
     {
-      title: "We Build Products, Not Just Projects",
+      title: "We Understand Real Products",
       description:
-        "Because we engineer and build our own software platforms (Neojan and Talentgate), we understand real user friction, system architecture, technical debt, and continuous delivery.",
+        "Because we build and maintain our own products (Neojan and Talentgate), we know what it takes to build software that real people use every day.",
       icon: "Cpu",
     },
     {
-      title: "Business-First Engineering",
+      title: "Focused on Your Business Needs",
       description:
-        "We prioritize business outcomes over technology hype. Every line of code, cloud architecture choice, and database schema is tied to real workflow requirements.",
+        "We build features that solve your actual business challenges rather than adding unnecessary tech complexity.",
       icon: "Target",
     },
     {
-      title: "Product-Quality Standards",
+      title: "High Standards for Every Project",
       description:
-        "We apply the exact same product-grade quality control, security standards, and CI/CD pipelines to client projects as we do to our own platforms.",
+        "We use the same code quality, security checks, and testing procedures for client projects as we do for our own products.",
       icon: "ShieldCheck",
     },
     {
-      title: "Full Transparency & Ownership",
+      title: "Full Ownership & Clear Communication",
       description:
-        "Clients retain 100% intellectual property, repository access, data control, and technical documentation from Day 1.",
+        "You get 100% ownership of your source code, design files, and database schemas from day one.",
       icon: "Key",
     },
   ],
   faqs: [
     {
-      question: "What differentiates Dhruvi Software Solutions from typical IT agencies?",
+      question: "What makes Dhruvi Software Solutions different?",
       answer:
-        "Most software vendors are pure coding houses that sell billable hours. Dhruvi Software Solutions is a product engineering company that builds its own software platforms (Neojan & Talentgate). This gives us deep, hands-on mastery over the full product lifecycle — from UX architecture to cloud scaling and long-term maintenance.",
+        "We build and run our own software products alongside client projects. This means we treat every client project like a real product — focusing on user experience, reliability, clean code, and long-term maintainability.",
     },
     {
-      question: "What engagement models do you offer for custom software development?",
+      question: "How do you handle custom software projects?",
       answer:
-        "We offer dedicated product engineering teams, fixed-scope MVP milestone delivery, and long-term modernization/maintenance partnerships. Every project comes with transparent sprint updates and clear repository access.",
+        "We work closely with you through a simple 7-step process: requirements gathering, design, milestone-based development, testing, and deployment. You receive regular progress updates and full access to the project code.",
     },
     {
-      question: "Can you help modernize legacy business systems?",
+      question: "Can you help update older or legacy business systems?",
       answer:
-        "Yes. We specialize in refactoring monoliths, migrating legacy databases to scalable cloud infrastructures, integrating APIs with modern web/mobile frontends, and automating manual business workflows.",
+        "Yes. We can modernize legacy software step by step — updating outdated codebases, improving database speed, and connecting old systems to modern web and mobile apps without disturbing daily operations.",
     },
     {
-      question: "Who owns the code and intellectual property of custom projects?",
+      question: "Who owns the code and IP for custom projects?",
       answer:
-        "You own 100% of the code, IP, system assets, database schemas, and documentation. We deliver complete repository transfers upon milestone approvals.",
+        "You own 100% of the code, intellectual property, designs, and documentation. We transfer full source code repositories and credentials to you.",
     },
   ],
 };

@@ -51,13 +51,13 @@ export function ProjectPlannerForm() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs font-mono">
-            <span>Direct Technical Consultation</span>
+            <span>Start Your Project</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Have a Software Idea or Business Problem?
+            Have a Project or Software Need?
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-            Tell us what you're trying to build, improve, automate, or solve. Our senior technical architects will review your requirements and provide a clear technical roadmap.
+            Tell us about what you want to build, update, or automate. Our team will review your message and reply with practical recommendations and clear next steps.
           </p>
         </div>
 

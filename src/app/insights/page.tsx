@@ -3,9 +3,9 @@ import { insightsData } from "@/data/insightsData";
 import { BookOpen, Clock } from "lucide-react";
 
 export const metadata = {
-  title: "Engineering Insights & Guides | Dhruvi Software Solutions",
+  title: "Articles & Software Guides | Dhruvi Software Solutions",
   description:
-    "Engineering insights, SaaS MVP blueprints, custom software strategy guides, and legacy software modernization frameworks.",
+    "Software guides, SaaS MVP development advice, custom software planning, and legacy system modernization articles.",
 };
 
 export default function InsightsPage() {
@@ -16,13 +16,13 @@ export default function InsightsPage() {
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs font-mono">
             <BookOpen className="h-3.5 w-3.5 text-sky-600" />
-            <span>Technical Thought Leadership</span>
+            <span>Articles & Insights</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
-            Engineering Insights & Software Strategy
+            Software Articles & Guides
           </h1>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-            Practical guides and architectural insights on custom software ROI, SaaS MVP development, cloud multi-tenancy, and legacy modernization.
+            Practical guides and articles on custom software strategy, SaaS MVP planning, and updating older business applications.
           </p>
         </div>
 

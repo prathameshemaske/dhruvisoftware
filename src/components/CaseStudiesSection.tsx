@@ -10,13 +10,13 @@ export function CaseStudiesSection() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs font-mono">
-            <span>Empirical Engineering Impact</span>
+            <span>Case Studies</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Case Studies & Proven Architecture
+            Featured Projects & Solutions
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-            Real stories of transformation — how we solve complex business problems through scalable software engineering.
+            Examples of how we build custom software applications and SaaS platforms to solve real operational challenges.
           </p>
         </div>
 

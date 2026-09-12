@@ -20,13 +20,13 @@ export function OwnedProductsSection({ products }: ProductSectionProps) {
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-mono">
             <Sparkles className="h-3.5 w-3.5 text-indigo-600" />
-            <span>Our Proprietary Software Platforms</span>
+            <span>Our Software Products</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Software Platforms Built & Engineered by Us
+            Software Products Built & Created by Us
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-            We don't only build software for clients. We engineer software platforms of our own. Neojan is live and Talentgate is launching soon.
+            In addition to building software for clients, we design and operate our own software platforms. Neojan is live and Talentgate is launching soon.
           </p>
         </div>
 

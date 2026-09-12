@@ -9,13 +9,13 @@ export function WhyChooseUs() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs font-mono">
-            <span>Our Core Technical Differentiator</span>
+            <span>Why Work With Us</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            We Build Products, Not Just Projects
+            We Treat Every Project Like a Real Product
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-            Because we build, operate, and scale our own software products (Neojan and Talentgate), we understand real user adoption, system scalability, technical debt, and continuous delivery. We bring that exact product mindset to your custom software.
+            Because we build and run our own software products (Neojan and Talentgate), we understand what makes software easy to use, reliable, and scalable. We bring that practical experience to every custom project we build for our clients.
           </p>
         </div>
 
@@ -25,9 +25,9 @@ export function WhyChooseUs() {
             <div className="p-2.5 rounded-lg bg-sky-100 text-sky-700 border border-sky-200 w-fit">
               <Cpu className="h-5 w-5" />
             </div>
-            <h3 className="text-base font-bold text-slate-900">Product-Grade Architecture</h3>
+            <h3 className="text-base font-bold text-slate-900">Product-Quality Code</h3>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              We apply the exact same modular microservice patterns, database optimization, and cloud CI/CD pipelines to client projects as we do to our own SaaS platforms.
+              We write clean, well-tested code for client applications using the exact same quality standards we use for our own software platforms.
             </p>
           </div>
 
@@ -35,9 +35,9 @@ export function WhyChooseUs() {
             <div className="p-2.5 rounded-lg bg-indigo-100 text-indigo-700 border border-indigo-200 w-fit">
               <Target className="h-5 w-5" />
             </div>
-            <h3 className="text-base font-bold text-slate-900">Business-First Engineering</h3>
+            <h3 className="text-base font-bold text-slate-900">Focused on Your Goals</h3>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              We understand the business problem before writing code. Every feature, database schema, and interface design is tied directly to your operational ROI.
+              We focus on understanding your business needs first so every screen, database rule, and feature directly solves a real problem.
             </p>
           </div>
 
@@ -45,9 +45,9 @@ export function WhyChooseUs() {
             <div className="p-2.5 rounded-lg bg-purple-100 text-purple-700 border border-purple-200 w-fit">
               <Key className="h-5 w-5" />
             </div>
-            <h3 className="text-base font-bold text-slate-900">100% Code & IP Ownership</h3>
+            <h3 className="text-base font-bold text-slate-900">100% Full Ownership</h3>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Clients retain full ownership of all source code repositories, IP, design assets, and database schemas upon milestone approvals.
+              You own all source code repositories, intellectual property, designs, and database schemas completely from day one.
             </p>
           </div>
 
@@ -55,9 +55,9 @@ export function WhyChooseUs() {
             <div className="p-2.5 rounded-lg bg-emerald-100 text-emerald-700 border border-emerald-200 w-fit">
               <ShieldCheck className="h-5 w-5" />
             </div>
-            <h3 className="text-base font-bold text-slate-900">Scalable & Secure Foundation</h3>
+            <h3 className="text-base font-bold text-slate-900">Reliable & Secure</h3>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              We engineer for today's requirements without locking out tomorrow's growth. System security, role-based access, and audit logging are built-in defaults.
+              We design software for today while ensuring it can scale safely. User permissions, data security, and audit checks are standard.
             </p>
           </div>
 
@@ -65,9 +65,9 @@ export function WhyChooseUs() {
             <div className="p-2.5 rounded-lg bg-sky-100 text-sky-700 border border-sky-200 w-fit">
               <Layers className="h-5 w-5" />
             </div>
-            <h3 className="text-base font-bold text-slate-900">Transparent Agile Process</h3>
+            <h3 className="text-base font-bold text-slate-900">Clear & Open Progress</h3>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              No black-box development. Weekly sprint reviews, staging environment deployments, and continuous access to task boards keep you fully informed.
+              You stay involved with clear updates, regular reviews, and direct access to staging environments throughout development.
             </p>
           </div>
 
@@ -75,9 +75,9 @@ export function WhyChooseUs() {
             <div className="p-2.5 rounded-lg bg-indigo-100 text-indigo-700 border border-indigo-200 w-fit">
               <Users2 className="h-5 w-5" />
             </div>
-            <h3 className="text-base font-bold text-slate-900">Long-Term Technical Partnership</h3>
+            <h3 className="text-base font-bold text-slate-900">Long-Term Support</h3>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              We stay involved beyond launch, supporting continuous cloud deployment, feature enhancements, and system monitoring as your product scales.
+              We remain available after launch to provide server monitoring, bug fixes, updates, and feature additions as your business grows.
             </p>
           </div>
         </div>

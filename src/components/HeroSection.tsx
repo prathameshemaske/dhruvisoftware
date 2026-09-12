@@ -19,7 +19,7 @@ export function HeroSection() {
             {/* Category Badge */}
             <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs font-mono">
               <span className="h-2 w-2 rounded-full bg-sky-500 animate-pulse"></span>
-              <span>Product Engineering Studio & SaaS Platform Builders</span>
+              <span>Software Development & In-House Products</span>
             </div>
 
             {/* Main Headline */}
@@ -32,7 +32,7 @@ export function HeroSection() {
 
             {/* Subtext */}
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
-              We build our own software platforms — like <strong className="text-sky-700 font-semibold">Neojan</strong> and <strong className="text-indigo-700 font-semibold">Talentgate</strong> — and engineer custom digital solutions for ambitious businesses that want to launch, scale, automate, and transform.
+              We build custom software applications and SaaS platforms for growing businesses, and we create our own software products like <strong className="text-sky-700 font-semibold">Neojan</strong> and <strong className="text-indigo-700 font-semibold">Talentgate</strong>.
             </p>
 
             {/* Dual CTAs */}
@@ -41,7 +41,7 @@ export function HeroSection() {
                 href="/contact"
                 className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl text-sm font-bold text-white bg-sky-600 hover:bg-sky-700 transition-all shadow-md shadow-sky-600/20 group"
               >
-                <span>Start a Project</span>
+                <span>Start Your Project</span>
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
@@ -57,15 +57,15 @@ export function HeroSection() {
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-6 border-t border-slate-200 text-xs text-slate-600 font-medium">
               <div className="flex items-center space-x-2">
                 <CheckCircle2 className="h-4 w-4 text-sky-600 shrink-0" />
-                <span>Proprietary SaaS Platforms</span>
+                <span>In-House Software Products</span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle2 className="h-4 w-4 text-sky-600 shrink-0" />
-                <span>100% Code & IP Ownership</span>
+                <span>100% Source Code Ownership</span>
               </div>
               <div className="flex items-center space-x-2">
                 <CheckCircle2 className="h-4 w-4 text-sky-600 shrink-0" />
-                <span>Product Lifecycle Mastery</span>
+                <span>Clear 7-Step Process</span>
               </div>
             </div>
           </div>

@@ -350,9 +350,9 @@ export function CustomSoftwareArchitectureDiagram() {
   return (
     <div className="w-full rounded-xl border border-slate-200 bg-white p-4 sm:p-6 shadow-lg text-slate-800 font-sans">
       <div className="text-center mb-6">
-        <span className="text-xs font-mono text-sky-600 tracking-wider uppercase font-semibold">System Blueprint</span>
-        <h4 className="text-base sm:text-lg font-bold text-slate-900 mt-1">High-Availability Product Architecture</h4>
-        <p className="text-xs text-slate-600 mt-0.5">Engineered for zero downtime, low latency, and modular scaling.</p>
+        <span className="text-xs font-mono text-sky-600 tracking-wider uppercase font-semibold">System Architecture</span>
+        <h4 className="text-base sm:text-lg font-bold text-slate-900 mt-1">Modern Software System Blueprint</h4>
+        <p className="text-xs text-slate-600 mt-0.5">Designed for reliability, fast response times, and clear data organization.</p>
       </div>
 
       {/* Node Flow Diagram */}
@@ -362,8 +362,8 @@ export function CustomSoftwareArchitectureDiagram() {
           <div className="inline-flex p-2.5 rounded-lg bg-sky-100 text-sky-700 border border-sky-200">
             <Globe className="h-5 w-5" />
           </div>
-          <div className="font-semibold text-slate-900 text-xs">Client Applications</div>
-          <div className="text-[11px] text-slate-500">Web App (Next.js), Mobile App (iOS/Android), PWA</div>
+          <div className="font-semibold text-slate-900 text-xs">User Applications</div>
+          <div className="text-[11px] text-slate-500">Web App (Next.js), Mobile App (iOS/Android)</div>
         </div>
 
         {/* Layer 2: API Gateway */}
@@ -371,8 +371,8 @@ export function CustomSoftwareArchitectureDiagram() {
           <div className="inline-flex p-2.5 rounded-lg bg-indigo-100 text-indigo-700 border border-indigo-200">
             <Lock className="h-5 w-5" />
           </div>
-          <div className="font-semibold text-sky-700 text-xs">Secure API Gateway</div>
-          <div className="text-[11px] text-slate-500">JWT Auth, Rate Limiting, CORS, Load Balancer</div>
+          <div className="font-semibold text-sky-700 text-xs">Secure API Connection</div>
+          <div className="text-[11px] text-slate-500">Authentication, Access Control, Data Security</div>
         </div>
 
         {/* Layer 3: Microservices */}
@@ -380,8 +380,8 @@ export function CustomSoftwareArchitectureDiagram() {
           <div className="inline-flex p-2.5 rounded-lg bg-purple-100 text-purple-700 border border-purple-200">
             <Cpu className="h-5 w-5" />
           </div>
-          <div className="font-semibold text-slate-900 text-xs">Microservice Workers</div>
-          <div className="text-[11px] text-slate-500">Workflow Engine, AI Parsing, Notifications, Rules</div>
+          <div className="font-semibold text-slate-900 text-xs">Backend Services</div>
+          <div className="text-[11px] text-slate-500">Workflow Rules, Email Triggers, Task Queue</div>
         </div>
 
         {/* Layer 4: Databases & Cloud */}
@@ -389,8 +389,8 @@ export function CustomSoftwareArchitectureDiagram() {
           <div className="inline-flex p-2.5 rounded-lg bg-emerald-100 text-emerald-700 border border-emerald-200">
             <Database className="h-5 w-5" />
           </div>
-          <div className="font-semibold text-emerald-700 text-xs">Cloud Persistence</div>
-          <div className="text-[11px] text-slate-500">PostgreSQL Replicas, Redis Cache, S3 Object Storage</div>
+          <div className="font-semibold text-emerald-700 text-xs">Cloud Database</div>
+          <div className="text-[11px] text-slate-500">PostgreSQL Database, Encrypted Storage, Backups</div>
         </div>
       </div>
     </div>

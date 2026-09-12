@@ -8,32 +8,32 @@ const processSteps = [
     step: "01",
     title: "Discover",
     icon: <Compass className="h-5 w-5" />,
-    summary: "Deep-dive analysis of business objectives, user workflows, data models, and technical requirements.",
+    summary: "Clear analysis of your business goals, user needs, and technical requirements.",
     details: [
-      "Stakeholder & operational workflow interviews",
-      "Legacy system dependency mapping",
-      "Technical risk assessment & timeline alignment",
+      "Operational workflow & requirement discussions",
+      "Existing system & tool review",
+      "Project timeline & goal alignment",
     ],
   },
   {
     step: "02",
     title: "Define",
     icon: <Flag className="h-5 w-5" />,
-    summary: "Translating business problems into detailed product scope, database architecture, and engineering roadmaps.",
+    summary: "Converting your business requirements into a clear scope, system architecture, and development plan.",
     details: [
-      "User story mapping & acceptance criteria",
-      "Database schema & API endpoint specification",
-      "Fixed milestone budget & release plan",
+      "Feature list & acceptance criteria",
+      "System & database architecture planning",
+      "Milestone schedule & release roadmap",
     ],
   },
   {
     step: "03",
     title: "Design",
     icon: <Layout className="h-5 w-5" />,
-    summary: "Engineering intuitive UX flows, wireframes, accessible component design systems, and interactive prototypes.",
+    summary: "Creating intuitive user interface screens, wireframes, and clickable design prototypes.",
     details: [
-      "User journey wireframes & screen suites",
-      "Figma design system & reusable tokens",
+      "Screen layouts & user flow maps",
+      "Figma visual design system",
       "Interactive click-through prototype review",
     ],
   },
@@ -41,44 +41,44 @@ const processSteps = [
     step: "04",
     title: "Engineer",
     icon: <Code2 className="h-5 w-5" />,
-    summary: "Building high-performance software using modern Next.js, Node.js, TypeScript, and clean code practices.",
+    summary: "Writing clean, reliable code using modern Next.js, Node.js, TypeScript, and React frameworks.",
     details: [
-      "Agile 2-week sprint cadences",
-      "Automated CI/CD build pipelines",
-      "Continuous code review & repository updates",
+      "Regular milestone development sprints",
+      "Continuous code reviews & repository updates",
+      "Staging preview links for client review",
     ],
   },
   {
     step: "05",
     title: "Test",
     icon: <ShieldCheck className="h-5 w-5" />,
-    summary: "Rigorous quality assurance including functional, API payload, load, performance, and security testing.",
+    summary: "Thorough quality assurance and testing to ensure application security, speed, and reliability.",
     details: [
-      "End-to-end integration & unit testing",
-      "OWASP security vulnerability auditing",
-      "Core Web Vitals & database latency optimization",
+      "Functional feature & integration testing",
+      "Security & access permission checks",
+      "Performance & device responsiveness testing",
     ],
   },
   {
     step: "06",
     title: "Launch",
     icon: <Rocket className="h-5 w-5" />,
-    summary: "De-risked deployment to cloud production environments (AWS/Vercel/Azure) with 24/7 uptime monitoring.",
+    summary: "Smooth deployment to cloud hosting environments with live monitoring.",
     details: [
-      "Production cloud infrastructure provisioning",
-      "Data migration & cutover verification",
-      "Live logging & performance monitoring setup",
+      "Production cloud server configuration",
+      "Data verification & domain setup",
+      "Live logging & uptime monitoring setup",
     ],
   },
   {
     step: "07",
     title: "Evolve",
     icon: <Cpu className="h-5 w-5" />,
-    summary: "Continuous feature enhancement, cloud optimization, user feedback iteration, and long-term technical support.",
+    summary: "Ongoing maintenance, feature additions, user feedback updates, and support.",
     details: [
-      "Post-launch user analytics review",
-      "Iterative Phase 2 feature releases",
-      "SLA-backed technical support & maintenance",
+      "Post-launch feedback review",
+      "Future feature enhancements",
+      "Ongoing maintenance & technical support",
     ],
   },
 ];
@@ -92,13 +92,13 @@ export function ProcessSection() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs font-mono">
-            <span>Product Lifecycle Discipline</span>
+            <span>Our 7-Step Process</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            How We Work: Our 7-Step Engineering Process
+            How We Build Software
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-            A structured, transparent methodology refined through building our own platforms and delivering complex client applications.
+            A clear, transparent process to guide your project from initial idea to launch and beyond.
           </p>
         </div>
 

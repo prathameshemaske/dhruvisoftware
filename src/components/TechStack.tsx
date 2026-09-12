@@ -71,13 +71,13 @@ export function TechStack() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-mono">
-            <span>Modern Production Technology Ecosystem</span>
+            <span>Technologies We Use</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Production-Grade Technologies We Use
+            Our Technology Stack
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-            We only deploy proven, battle-tested technologies that we actively use in our own SaaS platforms and client products.
+            We use reliable, modern tools and frameworks that we actively use in our own products and client applications.
           </p>
         </div>
 

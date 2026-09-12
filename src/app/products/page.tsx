@@ -5,9 +5,9 @@ import { ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
 import { NeojanDashboardMockup, TalentgateDashboardMockup } from "@/components/UiMockups";
 
 export const metadata = {
-  title: "Proprietary Software Platforms | Neojan & Talentgate",
+  title: "Software Products | Neojan & Talentgate",
   description:
-    "Explore our owned software platforms: Neojan (Enterprise Operations SaaS) and Talentgate (AI Recruitment Management Suite). Built and operated by Dhruvi Software Solutions.",
+    "Explore our software products: Neojan (Business Operations Platform) and Talentgate (Recruitment Suite). Created and operated by Dhruvi Software Solutions.",
 };
 
 export default function ProductsPage() {
@@ -21,10 +21,10 @@ export default function ProductsPage() {
             <span>Built & Owned by Dhruvi Software Solutions</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
-            Our Proprietary Software Platforms
+            Our Software Products
           </h1>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-            We don't just write code for hire — we build, launch, and operate platforms of our own. Neojan and Talentgate are living proof of our technical mastery, product UX design, and continuous engineering discipline.
+            In addition to custom software development for clients, we design and operate our own software products. Neojan and Talentgate demonstrate our focus on practical user experience and solid software architecture.
           </p>
         </div>
 

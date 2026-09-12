@@ -21,15 +21,15 @@ export default function HomePage() {
         <div className="max-w-[1536px] mx-auto px-4 sm:px-8 lg:px-12 flex items-center justify-between whitespace-nowrap gap-6">
           <span className="text-sky-700 font-semibold flex items-center gap-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-sky-600 animate-ping"></span>
-            PROPRIETARY PLATFORMS & CUSTOM ENGINEERING
+            IN-HOUSE PRODUCTS & CUSTOM SOFTWARE
           </span>
           <span>Our Owned Products (Neojan & Talentgate)</span>
           <span>·</span>
           <span>Custom Software Development</span>
           <span>·</span>
-          <span>SaaS Product Engineering</span>
+          <span>SaaS Product Development</span>
           <span>·</span>
-          <span>Legacy Modernization</span>
+          <span>Software Modernization</span>
         </div>
       </div>
 

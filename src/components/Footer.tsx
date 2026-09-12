@@ -27,7 +27,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-md">
-              We build software products that solve real business problems — including our platforms (Neojan & Talentgate) and custom software engineered for ambitious businesses worldwide.
+              We build custom software applications and SaaS platforms for growing businesses, and we create our own software products like Neojan and Talentgate.
             </p>
             <div className="pt-2 space-y-2 text-xs font-mono text-slate-300">
               <div className="flex items-center space-x-2">
@@ -143,7 +143,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-mono">
           <div>
-            © {new Date().getFullYear()} Dhruvi Software Solutions. All rights reserved. Built with product engineering discipline.
+            © {new Date().getFullYear()} Dhruvi Software Solutions. All rights reserved. Building reliable software products and solutions.
           </div>
           <div className="flex items-center space-x-6">
             <a
