@@ -15,20 +15,18 @@ export async function POST(request: Request) {
     const submittedAt = new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
     const recipientEmail = "prathameshmaske007@gmail.com";
 
-    // Structured multi-line inquiry report block for Google Form & Google Sheet
+    // Structured multi-line inquiry report block matching website form fields exactly
     const inquiryDetails = [
       "========================================",
       " 📌 NEW WEBSITE PROJECT INQUIRY",
       "========================================",
-      `• Client Name: ${name}`,
-      `• Company: ${company || "Individual / N/A"}`,
-      `• Client Email: ${email}`,
+      `• Your Full Name: ${name}`,
+      `• Company / Organization: ${company || "Individual / N/A"}`,
+      `• Work Email Address: ${email}`,
       `• Phone / WhatsApp: ${phone || "N/A"}`,
       `• Project Type: ${projectType}`,
-      `• Estimated Budget: ${budget || "N/A"}`,
-      `• Timeline: ${timeline || "N/A"}`,
       "----------------------------------------",
-      "• Project Overview & Requirements:",
+      "• Project Overview & Objectives:",
       description,
       "========================================",
       `Submitted At: ${submittedAt}`,

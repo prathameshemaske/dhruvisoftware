@@ -137,7 +137,7 @@ export function ProjectPlannerForm() {
                       <input
                         type="text"
                         required
-                        placeholder="John Doe"
+                        placeholder="Enter your full name"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         className="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-300 text-sm text-slate-900 focus:outline-none focus:border-sky-500 focus:bg-white transition-colors"
@@ -149,7 +149,7 @@ export function ProjectPlannerForm() {
                       <label className="text-xs font-mono text-slate-700 font-semibold">Company / Organization</label>
                       <input
                         type="text"
-                        placeholder="Acme Corp"
+                        placeholder="Enter your company or organization name"
                         value={formData.company}
                         onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                         className="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-300 text-sm text-slate-900 focus:outline-none focus:border-sky-500 focus:bg-white transition-colors"
@@ -162,7 +162,7 @@ export function ProjectPlannerForm() {
                       <input
                         type="email"
                         required
-                        placeholder="john@company.com"
+                        placeholder="Enter your work email address"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         className="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-300 text-sm text-slate-900 focus:outline-none focus:border-sky-500 focus:bg-white transition-colors"
@@ -174,7 +174,7 @@ export function ProjectPlannerForm() {
                       <label className="text-xs font-mono text-slate-700 font-semibold">Phone / WhatsApp</label>
                       <input
                         type="tel"
-                        placeholder="+1 (555) 000-0000"
+                        placeholder="Enter your phone or WhatsApp number"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         className="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-300 text-sm text-slate-900 focus:outline-none focus:border-sky-500 focus:bg-white transition-colors"
@@ -207,7 +207,7 @@ export function ProjectPlannerForm() {
                     <textarea
                       required
                       rows={4}
-                      placeholder="Briefly describe what software you want to build, the business problem you need to solve, or key required capabilities..."
+                      placeholder="Enter your project overview, business problem to solve, or key requirements..."
                       value={formData.description}
                       onChange={(e) => setFormData({ ...formData, description: e.target.value })}
                       className="w-full px-4 py-2.5 rounded-lg bg-slate-50 border border-slate-300 text-sm text-slate-900 focus:outline-none focus:border-sky-500 focus:bg-white transition-colors"
