@@ -19,7 +19,7 @@ export interface CompanyInfo {
 
 export const companyData: CompanyInfo = {
   name: "Dhruvi Software Solutions",
-  tagline: "Software Development & Product Engineering",
+  tagline: "Building a Brighter Digital Tomorrow",
   shortDescription:
     "We build custom software applications and SaaS platforms for growing businesses. We also create and run our own software products like Neojan and Talentgate.",
   longDescription:

@@ -22,7 +22,7 @@ export function Footer() {
                   Dhruvi <span className="text-sky-400 font-black">SOFTWARE</span>
                 </span>
                 <span className="text-[9px] font-mono text-slate-400 tracking-wider uppercase mt-1">
-                  IDEAS. SOLUTIONS. A BRIGHTER TOMORROW.
+                  BUILDING A BRIGHTER DIGITAL TOMORROW
                 </span>
               </div>
             </Link>

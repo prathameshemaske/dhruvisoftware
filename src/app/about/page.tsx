@@ -10,6 +10,38 @@ export const metadata = {
     "Learn about Dhruvi Software Solutions, custom software application developers and creators of Neojan and Talentgate platforms.",
 };
 
+const brandEssence = [
+  {
+    icon: "/essence-innovate.png",
+    title: "Innovate",
+    subtitle: "Turn ideas into real solutions",
+  },
+  {
+    icon: "/essence-collaborate.png",
+    title: "Collaborate",
+    subtitle: "Stronger together",
+  },
+  {
+    icon: "/essence-grow.png",
+    title: "Grow",
+    subtitle: "Enable progress",
+  },
+  {
+    icon: "/essence-impact.png",
+    title: "Make an Impact",
+    subtitle: "Create meaningful change",
+  },
+];
+
+const colorPalette = [
+  { name: "Navy Primary", hex: "#0B1B3B", bg: "bg-[#0B1B3B]", text: "text-white" },
+  { name: "Blue Accent", hex: "#2563EB", bg: "bg-[#2563EB]", text: "text-white" },
+  { name: "Cyan Highlight", hex: "#00C2FF", bg: "bg-[#00C2FF]", text: "text-slate-900" },
+  { name: "Purple Accent", hex: "#7C3AED", bg: "bg-[#7C3AED]", text: "text-white" },
+  { name: "Emerald Green", hex: "#10B981", bg: "bg-[#10B981]", text: "text-white" },
+  { name: "Vibrant Orange", hex: "#F97316", bg: "bg-[#F97316]", text: "text-white" },
+];
+
 export default function AboutPage() {
   return (
     <div className="py-6 sm:py-12 bg-slate-50 min-h-screen space-y-12 sm:space-y-16">
@@ -28,41 +60,111 @@ export default function AboutPage() {
         </div>
 
         {/* Official Brand Identity Showcase */}
-        <div className="rounded-2xl bg-white border border-slate-200 p-8 shadow-sm space-y-6">
+        <div className="rounded-2xl bg-white border border-slate-200 p-8 shadow-sm space-y-8">
           <div className="text-center max-w-xl mx-auto space-y-2">
             <div className="text-xs font-mono text-sky-600 uppercase tracking-wider font-semibold">
               Official Brand Identity
             </div>
-            <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900">
-              Ideas. Solutions. A Brighter Tomorrow.
+            <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900">
+              Ideas into Impact
             </h2>
             <p className="text-xs sm:text-sm text-slate-600">
-              Our brand mark signifies forward motion, clarity, and quality software.
+              Software solutions for a brighter digital tomorrow. Our brand mark signifies forward motion, clarity, guidance, and infinite potential.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+
+          {/* Banner & Primary Header Logos */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 flex flex-col items-center justify-center space-y-3">
-              <span className="text-xs font-mono text-slate-500 uppercase">Primary Light Logo</span>
+              <span className="text-xs font-mono text-slate-500 uppercase">Primary Full Logo</span>
               <Image
-                src="/logo-primary-clean.png"
-                alt="Dhruvi Software Primary Logo"
-                width={400}
-                height={160}
+                src="/brand-logo-full.png"
+                alt="Dhruvi Software Solutions Primary Logo"
+                width={435}
+                height={185}
                 loading="lazy"
-                className="h-16 w-auto object-contain"
+                className="h-20 sm:h-24 w-auto object-contain"
               />
             </div>
             <div className="p-6 rounded-xl bg-slate-900 border border-slate-800 flex flex-col items-center justify-center space-y-3">
-              <span className="text-xs font-mono text-slate-400 uppercase">Primary Dark Logo</span>
+              <span className="text-xs font-mono text-slate-400 uppercase">Brand Identity Banner</span>
+              <Image
+                src="/brand-banner.png"
+                alt="Dhruvi Brand Banner - Ideas into Impact"
+                width={500}
+                height={220}
+                loading="lazy"
+                className="h-24 sm:h-28 w-auto object-contain rounded-lg shadow-sm"
+              />
+            </div>
+          </div>
+
+          {/* Light & Dark Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+            <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 flex flex-col items-center justify-center space-y-3">
+              <span className="text-xs font-mono text-slate-500 uppercase">Light Variation</span>
+              <Image
+                src="/logo-primary-clean.png"
+                alt="Dhruvi Software Light Logo Card"
+                width={220}
+                height={240}
+                loading="lazy"
+                className="h-24 w-auto object-contain"
+              />
+            </div>
+            <div className="p-6 rounded-xl bg-slate-900 border border-slate-800 flex flex-col items-center justify-center space-y-3">
+              <span className="text-xs font-mono text-slate-400 uppercase">Dark Variation</span>
               <Image
                 src="/logo-dark-clean.png"
-                alt="Dhruvi Software Dark Logo"
-                width={400}
-                height={160}
+                alt="Dhruvi Software Dark Logo Card"
+                width={220}
+                height={240}
                 loading="lazy"
-                className="h-16 w-auto object-contain"
+                className="h-24 w-auto object-contain"
               />
+            </div>
+          </div>
+
+          {/* Brand Essence Section */}
+          <div className="pt-6 border-t border-slate-200 space-y-6">
+            <div className="text-center space-y-1">
+              <span className="text-xs font-mono text-sky-600 uppercase tracking-wider font-semibold">Brand Essence</span>
+              <h3 className="text-lg font-bold text-slate-900">What Drives Our Work</h3>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              {brandEssence.map((item, idx) => (
+                <div key={idx} className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center space-y-2 flex flex-col items-center justify-center">
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    width={38}
+                    height={38}
+                    className="h-8 w-8 object-contain"
+                  />
+                  <h4 className="text-sm font-bold text-slate-900">{item.title}</h4>
+                  <p className="text-[11px] text-slate-600 leading-tight">{item.subtitle}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Official Brand Color Palette */}
+          <div className="pt-6 border-t border-slate-200 space-y-4">
+            <div className="text-center space-y-1">
+              <span className="text-xs font-mono text-sky-600 uppercase tracking-wider font-semibold">Color Palette</span>
+              <h3 className="text-lg font-bold text-slate-900">Official Brand Colors</h3>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+              {colorPalette.map((color, idx) => (
+                <div key={idx} className="rounded-xl border border-slate-200 overflow-hidden shadow-xs">
+                  <div className={`h-12 ${color.bg} flex items-center justify-center font-mono text-xs font-bold ${color.text}`}>
+                    {color.hex}
+                  </div>
+                  <div className="p-2 text-center bg-white">
+                    <span className="text-[11px] font-semibold text-slate-800">{color.name}</span>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

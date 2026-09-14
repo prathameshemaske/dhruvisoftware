@@ -68,7 +68,7 @@ export function Navbar() {
                 Dhruvi <span className="text-sky-600 font-black">SOFTWARE</span>
               </span>
               <span className="text-[9px] font-mono text-slate-500 tracking-wider uppercase mt-0.5 hidden sm:block">
-                IDEAS. SOLUTIONS. A BRIGHTER TOMORROW.
+                BUILDING A BRIGHTER DIGITAL TOMORROW
               </span>
             </div>
           </Link>
