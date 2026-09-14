@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Cpu, Target } from "lucide-react";
+import { ArrowRight, Cpu, Target, ShieldCheck, Code2, Rocket, Layers } from "lucide-react";
 import { companyData } from "@/data/companyData";
 
 export const metadata = {
@@ -10,167 +10,101 @@ export const metadata = {
     "Learn about Dhruvi Software Solutions, custom software application developers and creators of Neojan and Talentgate platforms.",
 };
 
-const brandEssence = [
+const brandPillars = [
   {
     icon: "/essence-innovate.png",
     title: "Innovate",
-    subtitle: "Turn ideas into real solutions",
+    description: "Turn complex ideas into practical, high-performance software.",
   },
   {
     icon: "/essence-collaborate.png",
     title: "Collaborate",
-    subtitle: "Stronger together",
+    description: "Work closely with client teams to deliver transparent milestone updates.",
   },
   {
     icon: "/essence-grow.png",
     title: "Grow",
-    subtitle: "Enable progress",
+    description: "Build scalable architectures engineered to support long-term expansion.",
   },
   {
     icon: "/essence-impact.png",
     title: "Make an Impact",
-    subtitle: "Create meaningful change",
+    description: "Create software that delivers measurable business value and speed.",
   },
-];
-
-const colorPalette = [
-  { name: "Navy Primary", hex: "#0B1B3B", bg: "bg-[#0B1B3B]", text: "text-white" },
-  { name: "Blue Accent", hex: "#2563EB", bg: "bg-[#2563EB]", text: "text-white" },
-  { name: "Cyan Highlight", hex: "#00C2FF", bg: "bg-[#00C2FF]", text: "text-slate-900" },
-  { name: "Purple Accent", hex: "#7C3AED", bg: "bg-[#7C3AED]", text: "text-white" },
-  { name: "Emerald Green", hex: "#10B981", bg: "bg-[#10B981]", text: "text-white" },
-  { name: "Vibrant Orange", hex: "#F97316", bg: "bg-[#F97316]", text: "text-white" },
 ];
 
 export default function AboutPage() {
   return (
     <div className="py-6 sm:py-12 bg-slate-50 min-h-screen space-y-12 sm:space-y-16">
       <div className="max-w-[1536px] mx-auto px-4 sm:px-8 lg:px-12 space-y-16">
-        {/* Header */}
-        <div className="max-w-3xl space-y-6">
-          <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs font-mono">
-            <span>About Dhruvi Software Solutions</span>
-          </div>
-          <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
-            We Believe Software Should Solve Real Business Problems.
-          </h1>
-          <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-            Dhruvi Software Solutions was established to build reliable software applications for growing businesses. We deliver custom software development, web & mobile applications, SaaS platforms, and software modernization, while also creating and operating our own software products.
-          </p>
-        </div>
-
-        {/* Official Brand Identity Showcase */}
-        <div className="rounded-2xl bg-white border border-slate-200 p-8 shadow-sm space-y-8">
-          <div className="text-center max-w-xl mx-auto space-y-2">
-            <div className="text-xs font-mono text-sky-600 uppercase tracking-wider font-semibold">
-              Official Brand Identity
+        {/* Full-Width 2-Column Hero Header */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch bg-white border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-sm">
+          {/* Left Column: Heading & Value Proposition */}
+          <div className="lg:col-span-7 space-y-6 flex flex-col justify-center">
+            <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs font-mono w-fit">
+              <span>About Dhruvi Software Solutions</span>
             </div>
-            <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900">
-              Ideas into Impact
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-600">
-              Software solutions for a brighter digital tomorrow. Our brand mark signifies forward motion, clarity, guidance, and infinite potential.
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+              We Believe Software Should{" "}
+              <span className="bg-gradient-to-r from-sky-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent">
+                Solve Real Business Problems.
+              </span>
+            </h1>
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+              Dhruvi Software Solutions was established to build reliable software applications for growing businesses. We deliver custom software development, web & mobile applications, SaaS platforms, and software modernization, while also creating and operating our own software products.
             </p>
-          </div>
-
-          {/* Banner & Primary Header Logos */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 flex flex-col items-center justify-center space-y-3">
-              <span className="text-xs font-mono text-slate-500 uppercase">Primary Full Logo</span>
-              <Image
-                src="/brand-logo-full.png"
-                alt="Dhruvi Software Solutions Primary Logo"
-                width={435}
-                height={185}
-                loading="lazy"
-                className="h-20 sm:h-24 w-auto object-contain"
-              />
-            </div>
-            <div className="p-6 rounded-xl bg-slate-900 border border-slate-800 flex flex-col items-center justify-center space-y-3">
-              <span className="text-xs font-mono text-slate-400 uppercase">Brand Identity Banner</span>
-              <Image
-                src="/brand-banner.png"
-                alt="Dhruvi Brand Banner - Ideas into Impact"
-                width={500}
-                height={220}
-                loading="lazy"
-                className="h-24 sm:h-28 w-auto object-contain rounded-lg shadow-sm"
-              />
+            <div className="pt-2 flex flex-wrap gap-4 text-xs font-mono text-slate-600">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 border border-slate-200">
+                <Code2 className="h-3.5 w-3.5 text-sky-600" /> Custom Development
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 border border-slate-200">
+                <Rocket className="h-3.5 w-3.5 text-indigo-600" /> In-House Products
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-100 border border-slate-200">
+                <ShieldCheck className="h-3.5 w-3.5 text-emerald-600" /> 100% IP Ownership
+              </span>
             </div>
           </div>
 
-          {/* Light & Dark Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
-            <div className="p-6 rounded-xl bg-slate-50 border border-slate-200 flex flex-col items-center justify-center space-y-3">
-              <span className="text-xs font-mono text-slate-500 uppercase">Light Variation</span>
-              <Image
-                src="/logo-primary-clean.png"
-                alt="Dhruvi Software Light Logo Card"
-                width={220}
-                height={240}
-                loading="lazy"
-                className="h-24 w-auto object-contain"
-              />
+          {/* Right Column: Key Metrics & Company Highlights (Fills the blank space) */}
+          <div className="lg:col-span-5 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 rounded-2xl p-6 sm:p-8 text-white space-y-6 flex flex-col justify-between shadow-md">
+            <div className="space-y-2">
+              <span className="text-xs font-mono text-sky-400 uppercase tracking-wider font-semibold">
+                Company Overview
+              </span>
+              <h2 className="text-xl font-bold text-white">Built by Engineers Who Run Real Products</h2>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Operating our own platforms (Neojan & Talentgate) gives us deep practical insight into code quality, speed, security, and maintenance.
+              </p>
             </div>
-            <div className="p-6 rounded-xl bg-slate-900 border border-slate-800 flex flex-col items-center justify-center space-y-3">
-              <span className="text-xs font-mono text-slate-400 uppercase">Dark Variation</span>
-              <Image
-                src="/logo-dark-clean.png"
-                alt="Dhruvi Software Dark Logo Card"
-                width={220}
-                height={240}
-                loading="lazy"
-                className="h-24 w-auto object-contain"
-              />
-            </div>
-          </div>
 
-          {/* Brand Essence Section */}
-          <div className="pt-6 border-t border-slate-200 space-y-6">
-            <div className="text-center space-y-1">
-              <span className="text-xs font-mono text-sky-600 uppercase tracking-wider font-semibold">Brand Essence</span>
-              <h3 className="text-lg font-bold text-slate-900">What Drives Our Work</h3>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              {brandEssence.map((item, idx) => (
-                <div key={idx} className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center space-y-2 flex flex-col items-center justify-center">
-                  <Image
-                    src={item.icon}
-                    alt={item.title}
-                    width={38}
-                    height={38}
-                    className="h-8 w-8 object-contain"
-                  />
-                  <h4 className="text-sm font-bold text-slate-900">{item.title}</h4>
-                  <p className="text-[11px] text-slate-600 leading-tight">{item.subtitle}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Official Brand Color Palette */}
-          <div className="pt-6 border-t border-slate-200 space-y-4">
-            <div className="text-center space-y-1">
-              <span className="text-xs font-mono text-sky-600 uppercase tracking-wider font-semibold">Color Palette</span>
-              <h3 className="text-lg font-bold text-slate-900">Official Brand Colors</h3>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-              {colorPalette.map((color, idx) => (
-                <div key={idx} className="rounded-xl border border-slate-200 overflow-hidden shadow-xs">
-                  <div className={`h-12 ${color.bg} flex items-center justify-center font-mono text-xs font-bold ${color.text}`}>
-                    {color.hex}
-                  </div>
-                  <div className="p-2 text-center bg-white">
-                    <span className="text-[11px] font-semibold text-slate-800">{color.name}</span>
-                  </div>
-                </div>
-              ))}
+            <div className="grid grid-cols-2 gap-4 border-t border-slate-800 pt-6">
+              <div className="space-y-1">
+                <div className="text-2xl sm:text-3xl font-extrabold text-sky-400">2+</div>
+                <div className="text-xs font-semibold text-slate-200">In-House Products</div>
+                <div className="text-[11px] text-slate-400">Neojan & Talentgate</div>
+              </div>
+              <div className="space-y-1">
+                <div className="text-2xl sm:text-3xl font-extrabold text-indigo-400">100%</div>
+                <div className="text-xs font-semibold text-slate-200">IP Ownership</div>
+                <div className="text-[11px] text-slate-400">Transferred to clients</div>
+              </div>
+              <div className="space-y-1">
+                <div className="text-2xl sm:text-3xl font-extrabold text-emerald-400">10+</div>
+                <div className="text-xs font-semibold text-slate-200">Software Services</div>
+                <div className="text-[11px] text-slate-400">Web, Mobile & SaaS</div>
+              </div>
+              <div className="space-y-1">
+                <div className="text-2xl sm:text-3xl font-extrabold text-amber-400">7-Step</div>
+                <div className="text-xs font-semibold text-slate-200">Proven Process</div>
+                <div className="text-[11px] text-slate-400">Concept to launch</div>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Dual Pillar Story */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-slate-200 pt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="p-8 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4">
             <div className="p-2.5 rounded-lg bg-sky-100 text-sky-700 border border-sky-200 w-fit">
               <Cpu className="h-6 w-6" />
@@ -192,9 +126,9 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Philosophy Pillars */}
+        {/* Core Principles */}
         <div className="space-y-8">
-          <h2 className="text-2xl font-extrabold text-slate-900 text-center">Our Principles</h2>
+          <h2 className="text-2xl font-extrabold text-slate-900 text-center">Our Core Principles</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {companyData.philosophy.map((item, idx) => (
               <div key={idx} className="p-6 rounded-xl bg-white border border-slate-200 shadow-sm space-y-3">
