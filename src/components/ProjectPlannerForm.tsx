@@ -96,7 +96,7 @@ export function ProjectPlannerForm() {
               <div className="border-t border-slate-100 pt-6 space-y-3 font-mono text-xs text-slate-600">
                 <div className="flex items-center space-x-3">
                   <Mail className="h-4 w-4 text-sky-600" />
-                  <span>{companyData.email}</span>
+                  <span className="font-semibold text-slate-800">Coming soon..!</span>
                 </div>
                 <div className="flex items-center space-x-3 text-slate-500">
                   <Clock className="h-4 w-4 text-sky-600" />

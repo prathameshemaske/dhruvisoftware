@@ -26,7 +26,7 @@ export const companyData: CompanyInfo = {
     "Dhruvi Software Solutions builds reliable software products and custom applications for businesses. In addition to delivering custom web apps, mobile apps, SaaS platforms, and system modernizations, we also design and operate our own software products (Neojan and Talentgate). This practical experience helps us write clean code, design clear user interfaces, and build scalable systems.",
   foundingYear: 2021,
   location: "Maharashtra, India",
-  email: "contact@dhruvisoftwaresolutions.com",
+  email: "Coming soon..!",
   phone: "Available upon request",
   address: "Maharashtra, India",
   socialLinks: {

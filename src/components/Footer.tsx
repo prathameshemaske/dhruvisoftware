@@ -13,9 +13,9 @@ export function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="flex items-center space-x-3 group">
               <img
-                src="/brand-symbol.png"
+                src="/brand-symbol-transparent.png"
                 alt="Dhruvi Software Solutions"
-                className="h-10 w-auto object-contain brightness-110"
+                className="h-10 w-auto object-contain"
               />
               <div className="flex flex-col">
                 <span className="font-extrabold text-lg tracking-tight text-white leading-none">
@@ -32,9 +32,7 @@ export function Footer() {
             <div className="pt-2 space-y-2 text-xs font-mono text-slate-300">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-sky-400 shrink-0" />
-                <a href={`mailto:${companyData.email}`} className="hover:text-sky-300 transition-colors">
-                  {companyData.email}
-                </a>
+                <span className="text-slate-300 font-semibold">Coming soon..!</span>
               </div>
             </div>
           </div>
@@ -173,13 +171,10 @@ export function Footer() {
               </a>
             )}
             {!companyData.socialLinks.linkedin && !companyData.socialLinks.twitter && (
-              <a
-                href={`mailto:${companyData.email}`}
-                className="hover:text-sky-400 transition-colors flex items-center gap-1.5"
-              >
+              <div className="flex items-center gap-1.5 text-slate-300 font-semibold">
                 <Mail className="h-3.5 w-3.5 text-sky-400" />
-                <span>{companyData.email}</span>
-              </a>
+                <span>Coming soon..!</span>
+              </div>
             )}
           </div>
         </div>
